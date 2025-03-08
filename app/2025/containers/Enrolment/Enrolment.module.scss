@@ -1,5 +1,4 @@
-@import '@/styles/2025/variables.scss';
-
+@import '@/styles/2025/variables';
 
 .section {
   width: 100%;
@@ -10,6 +9,17 @@
   gap: $space-xl;
 }
 
+.linksContainer {
+  display:grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 $space-xl;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: $space-xl;
+}
 
 .faq {
   &Container {
