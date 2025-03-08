@@ -2,9 +2,9 @@ import {
   Header,
   Hero,
   Informations,
-  TopicList,
   Schedule,
   Questions,
+  Enrolment,
   Partners,
   Footer,
   SectionDivider,
@@ -16,14 +16,17 @@ export default function Home() {
     <main className='main'>
       <Header />
       <Hero />
+      <SectionDivider name='zapisy' />
+      <Enrolment />
+      <SectionGradient />
       <SectionDivider name='o wydarzeniu' />
       <Informations />
       <SectionGradient />
       <SectionDivider name='harmonogram' />
       <Schedule />
       <SectionGradient />
-      <SectionDivider name='zapisy' />
-      <Questions />
+      <SectionDivider name='faq' />
+      <Questions/>
       <SectionGradient />
       <SectionDivider name='partnerzy' />
       <Partners />

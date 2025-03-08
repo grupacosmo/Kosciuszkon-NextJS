@@ -16,6 +16,32 @@
 
 .honoraryPartnersGrid {
   padding: $space-xl 0;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @include maxWidth($bp-desktop) {
+    grid-template-columns: 1fr;
+    row-gap: $space-h;
+  }
+
+  img {
+    width: 429px;
+    height: auto;
+
+    @include maxWidth($bp-desktop) {
+      width: 354px;
+      height: auto;
+    }
+
+    @include maxWidth($bp-mobile) {
+      width: 204px;
+      height: auto;
+    }
+  }
+}
+
+
+.mainPartnersGrid {
+  padding: $space-xl 0;
   grid-template-columns: 1fr 1fr;
 
   @include maxWidth($bp-desktop) {
@@ -24,16 +50,16 @@
   }
 
   img {
-    width: 572px;
+    width: 429px;
     height: auto;
 
     @include maxWidth($bp-desktop) {
-      width: 472px;
+      width: 354px;
       height: auto;
     }
 
     @include maxWidth($bp-mobile) {
-      width: 272px;
+      width: 204px;
       height: auto;
     }
   }

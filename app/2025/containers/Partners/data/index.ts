@@ -1,63 +1,66 @@
 export const honoraryPartnersData = [
   {
-    id: '2025-honorary-sponsor-1',
-    img: '/p2025/partners/main/pk.png',
+    id: '2025-honorary-sponsor-3',
+    img: '/p2025/partners/honorary/wiit.png',
+    link: 'https://it.pk.edu.pl',
+    partnerName: 'WIiT',
+    customClass: 'wiit',
+  },
+  {
+    id: '2025-honorary-sponsor-2',
+    img: '/p2025/partners/honorary/pk.png',
     link: 'https://pk.edu.pl/',
     partnerName: 'Politechnika Krakowska',
     customClass: 'pk',
   },
   {
-    id: '2025-honorary-sponsor-2',
-    img: '/p2025/partners/main/malopolska.png',
-    link: 'https://www.malopolska.pl/',
-    partnerName: 'Małopolska',
-    customClass: 'malopolska',
+    id: '2025-honorary-sponsor-1',
+    img: '/p2025/partners/honorary/wieik.png',
+    link: 'https://wieik.pk.edu.pl',
+    partnerName: 'WIEiK',
+    customClass: 'wieik',
+  },
+];
+
+export const mainPartnerData = [
+  {
+    id: '2025-gold-sponsor-1',
+    img: '/p2025/partners/main/hitachi.png',
+    link: 'https://www.hitachienergy.com/se/sv/careers/shape-tomorrow-today?utm_source=google&utm_medium=paid-search&utm_campaign=bu:marketing-and-communications~cc:euc~cn:always-on-hub-neu-2024-2025~co:~ff&gad_source=1&gclid=Cj0KCQiA8q--BhDiARIsAP9tKI1JBBAzaxFh0-jn5M2vXXsVhx2TiVhQ47r6FgOuy_KWJ1j8NISSEeAaAsdaEALw_wcB',
+    partnerName: 'Hitachi Energy',
+    customClass: 'hitachi',
+  },
+  {
+    id: '2025-gold-sponsor-2',
+    img: '/p2025/partners/main/princity.png',
+    link: 'https://princity.com',
+    partnerName: 'Princity',
+    customClass: 'princity',
   },
 ];
 
 export const eventPartnersData = [
-  // {
-  //   id: '2025-event-partner-1',
-  //   img: '/p2025/partners/standard/vention_white.png',
-  //   link: 'https://ventionteams.com/',
-  //   partnerName: 'Vention',
-  //   customClass: 'vention',
-  // },
-  // {
-  //   id: '2025-event-partner-2',
-  //   img: '/p2025/partners/standard/jakdojade_color.svg',
-  //   link: 'https://jakdojade.pl/',
-  //   partnerName: 'Jak Dojade',
-  //   customClass: 'jakdojade',
-  // },
-  // {
-  //   id: '2025-event-partner-3',
-  //   img: '/p2025/partners/standard/luxoft_white.svg',
-  //   link: 'https://www.luxoft.com/',
-  //   partnerName: 'Luxoft',
-  //   customClass: 'luxoft',
-  // },
-  // {
-  //   id: '2025-event-partner-4',
-  //   img: '/p2025/partners/standard/kml.png',
-  //   link: 'https://kolejemalopolskie.com.pl/',
-  //   partnerName: 'Koleje Małopolskie',
-  //   customClass: 'kolejemalopolskie',
-  // },
-  // {
-  //   id: '2025-event-partner-5',
-  //   img: '/p2025/partners/standard/hitachi.png',
-  //   link: 'https://www.facebook.com/hitachienergy.global',
-  //   partnerName: 'Hitachi Energy',
-  //   customClass: 'hitachi',
-  // },
-  // {
-  //   id: '2025-event-partner-6',
-  //   img: '/p2025/partners/main/cracov.png',
-  //   link: 'https://www.krakow.pl/',
-  //   partnerName: 'Kraków',
-  //   customClass: 'cracov',
-  // },
+  {
+    id: '2025-event-partner-1',
+    img: '/p2025/partners/standard/vention_white.png',
+    link: 'https://ventionteams.com/',
+    partnerName: 'Vention',
+    customClass: 'vention',
+  },
+  {
+    id: '2025-event-partner-2',
+    img: '/p2025/partners/standard/kms.png',
+    link: 'https://kms.org.pl',
+    partnerName: 'KMS',
+    customClass: 'kms',
+  },
+  {
+    id: '2025-event-partner-3',
+    img: '/p2025/partners/standard/trawell.png',
+    link: 'https://trawell.pl',
+    partnerName: 'Trawell',
+    customClass: 'trawell',
+  },
 ];
 
 export const mediaPartnersData = [
