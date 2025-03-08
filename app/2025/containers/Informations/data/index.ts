@@ -25,23 +25,7 @@ export const sliderContent = [
       aplikację? A może jesteś poprostu kreatywny, potrafisz dobrze
       sprzedać pomysł i szybko się uczysz nowych technologii? Zbierz
       drużynę lub zapisz się, a my ją dla Ciebie znajdziemy. 
-      Jak w poprzednim roku, temat będzie dostępny tuż przed rozpoczęciem wydarzenia.
-      Dla uczestników zapewniamy jedzenie, napoje oraz miejsce do odpoczynku.`,
-    },
-  },
-  {
-    id: '2025-slied-3',
-    image: {
-      src: '/p2025/bcg/targi.jpg',
-      alt: 'Sala wykładowa.',
-    },
-    content: {
-      title: 'Targi pracy i inne atrakcje',
-      text: `Na wydarzeniu nie zabraknie innych atrakcji. Jedną z nich będą
-      targi pracy oraz stoiska firm, na których będziecie mogli
-      porozmawiać z przedstawicielami firm na temat pracy oraz zadać dowolne pytania. 
-      Oprócz tego odbędą się mini-konkursy organizowane przez nasz samorząd. Na miejscu będzie też fotoramka
-      do zrobienia pamiątkowego zdjęcia!`,
+      Temat ujawnimy podczas wydarzenia. Dla uczestników zapewniamy jedzenie, napoje oraz miejsce do super zabawy!`,
     },
   },
 ];
