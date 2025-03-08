@@ -1,5 +1,5 @@
 import { type ReactElement } from 'react';
-import { FaWpforms, FaFacebookF } from 'react-icons/fa';
+import { FaWpforms, FaFacebookF, FaInstagram } from 'react-icons/fa';
 import { Collapsible } from '@/app/utils';
 
 import { HexagonLink } from './components/HexagonLink';
@@ -25,21 +25,29 @@ export function Questions(): ReactElement {
 
       <article className={styles.linksContainer}>
         <HexagonLink
-          id='faq__form-label'
-          label='Formularz rejestracyjny'
-          arialLabel='faq__form-label'
-          href='https://forms.office.com/pages/responsepage.aspx?id=8qzyXLSsHU-Adm7aPxge7fhxeA78Pb5Aq0eAlucyCmpUNlU1WDNEQkpOM1gwSVpSRUtKSE9TT1pIMy4u&route=shorturl'
-          alt='Czarny sześciokąt z zielonym obramowaniem i ikoną formularza.'
-          Icon={FaWpforms}
-        />
-        <HexagonLink
-          id='faq__fb-evennt-label'
-          label='Wydarzenie na Facebooku'
-          arialLabel='faq__fb-evennt-label'
-          href='https://www.facebook.com/kosciuszkon'
+          id='faq__ig-evennt-label'
+          label='Wydarzenie na Instagramie'
+          arialLabel='faq__ig-evennt-label'
+          href='https://www.instagram.com/kosciuszkon_pk/'
           alt="Czarny sześciokąt z zielonym obramowaniem i ikoną Facebooka'a."
-          Icon={FaFacebookF}
+          Icon={FaInstagram}
         />
+          <HexagonLink
+              id='faq__form-label'
+              label='Formularz rejestracyjny'
+              arialLabel='faq__form-label'
+              href='https://forms.office.com/pages/responsepage.aspx?id=8qzyXLSsHU-Adm7aPxge7fhxeA78Pb5Aq0eAlucyCmpUNlU1WDNEQkpOM1gwSVpSRUtKSE9TT1pIMy4u&route=shorturl'
+              alt='Czarny sześciokąt z zielonym obramowaniem i ikoną formularza.'
+              Icon={FaWpforms}
+          />
+          <HexagonLink
+              id='faq__fb-evennt-label'
+              label='Wydarzenie na Facebooku'
+              arialLabel='faq__fb-evennt-label'
+              href='https://www.facebook.com/kosciuszkon'
+              alt="Czarny sześciokąt z zielonym obramowaniem i ikoną Facebooka'a."
+              Icon={FaFacebookF}
+          />
       </article>
 
       <article className={styles.faqContainer}>

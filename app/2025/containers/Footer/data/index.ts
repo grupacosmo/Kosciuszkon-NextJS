@@ -77,18 +77,25 @@ export const contacts = [
   },
   {
     id: '2025-contact-2',
+    href: 'https://www.instagram.com/kosciuszkon_pk/',
+    label: 'Nasz Instagram',
+    Icon: FaInstagram,
+  },
+  {
+    id: '2025-contact-3',
     href: 'mailto:kosciuszkon@samorzad.pk.edu.pl',
     label: 'kosciuszkon@samorzad.pk.edu.pl',
     Icon: FaEnvelope,
   },
+  ,
   {
-    id: '2025-contact-3',
+    id: '2025-contact-4',
     href: 'tel: +48 789-123-125',
     label: '+48 789-123-125',
     Icon: FaPhoneAlt,
   },
   {
-    id: '2025-contact-4',
+    id: '2025-contact-5',
     href: 'tel: +48 795-773-929',
     label: '+48 795-773-929',
     Icon: FaPhoneAlt,
