@@ -51,7 +51,6 @@ export function Footer(): ReactElement {
         <article className={styles.links}>
           <h3>Linki zewnętrzne</h3>
           <div className={styles.linksContainer}>
-            <FooterLinks baseLinks={externalLinks} />
             <FooterLinks iconLinks={externalLinksWithIcons} />
           </div>
         </article>

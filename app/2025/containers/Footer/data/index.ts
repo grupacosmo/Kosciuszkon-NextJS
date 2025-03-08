@@ -35,9 +35,6 @@ export const visitUsLinks = [
 
 export const externalLinks = [
   {
-    id: '2025-terms-1',
-    href: 'https://mckpk-my.sharepoint.com/:w:/g/personal/s_kosciuszkon_samorzad_pk_edu_pl/EQ9kM2q0gxJAl_ruJXlgCl8BDw4ZoBsNjcJ7-QMiZboU3g?e=eaWVTw',
-    label: 'Regulamin',
   },
 ];
 
@@ -50,18 +47,24 @@ export const externalLinksWithIcons = [
   },
   {
     id: '2025-external-2',
+    href: 'https://www.facebook.com/wrsswieik',
+    label: 'WRSS WIEiK',
+    Icon: FaFacebookF,
+  },
+  {
+    id: '2025-external-3',
     href: 'https://www.facebook.com/cosmopk.kn',
     label: 'Cosmo PK',
     Icon: FaFacebookF,
   },
   {
-    id: '2025-external-3',
+    id: '2025-external-4',
     href: 'https://www.instagram.com/wrss_wiit_pk/',
     label: 'WRSS WIiT',
     Icon: FaInstagram,
   },
   {
-    id: '2025-external-4',
+    id: '2025-external-5',
     href: 'https://www.instagram.com/cosmopk_kn/',
     label: 'Cosmo PK',
     Icon: FaInstagram,
@@ -71,7 +74,7 @@ export const externalLinksWithIcons = [
 export const contacts = [
   {
     id: '2023-contacts-1',
-    href: 'https://discord.gg/kngkbHmBfV',
+    href: 'https://discord.gg/Ek57YxvpT5',
     label: 'Discord - Oficjalny kanał',
     Icon: BsDiscord,
   },

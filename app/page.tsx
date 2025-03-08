@@ -19,9 +19,6 @@ export default function Home() {
       <SectionDivider name='o wydarzeniu' />
       <Informations />
       <SectionGradient />
-      <SectionDivider name='tematy' />
-      <TopicList />
-      <SectionGradient />
       <SectionDivider name='harmonogram' />
       <Schedule />
       <SectionGradient />
