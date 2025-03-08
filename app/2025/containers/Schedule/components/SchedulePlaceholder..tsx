@@ -8,17 +8,17 @@ export function SchedulePlaceholder(): ReactElement {
       <picture className={styles.picture}>
         <source
           media='(max-width:629px)'
-          srcSet='/p2024/schedule/schedule-sm.JPG'
+          srcSet='/p2025/schedule/schedule-sm.JPG'
         />
         <source
           media='(max-width:950px)'
-          srcSet='/p2024/schedule/schedule-md.JPG'
+          srcSet='/p2025/schedule/schedule-md.JPG'
         />
         <source
           media='(min-width:951px)'
-          srcSet='/p2024/schedule/schedule-lg.JPG'
+          srcSet='/p2025/schedule/schedule-lg.JPG'
         />
-        <img src='/p2024/topic/topic-lg.JPG' alt='' />
+        <img src='/p2025/topic/topic-lg.JPG' alt='' />
       </picture>
     </div>
   );

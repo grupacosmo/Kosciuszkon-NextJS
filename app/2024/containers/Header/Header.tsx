@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, type ReactElement, useEffect } from 'react';
+import { useState, type ReactElement } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { BiMenu, BiX } from 'react-icons/bi';
+import { BiMenu } from 'react-icons/bi';
 import { MenuItem } from './components/MenuItem';
 import { localLinks } from './data';
 import styles from './Header.module.scss';
+import style from './components/MenuItem.module.scss';
 
 export function Header(): ReactElement {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,43 +21,37 @@ export function Header(): ReactElement {
   });
 
   return (
-    <header className={styles.section}>
-      <nav className={styles.nav}>
-        <ul className={styles.navList}>
-          {localLinks.map((link) => (
-            <MenuItem key={link.id} onClick={closeMenu} {...link} />
-          ))}
-          <Link className={styles.link} href='/2023'>
-            I Edycja
-          </Link>
-        </ul>
+      <header className={styles.section}>
+        <nav className={styles.nav}>
+          <ul className={styles.navList}>
+            {localLinks.map((link) => (
+                <MenuItem key={link.id} onClick={closeMenu} {...link} />
+            ))}
+            <Link className={style.link} href='/'>
+              Obecna edycja
+            </Link>
+          </ul>
 
-        <button
-          className={clsx(styles.navButton, {
-            [styles.mobileNavButton]: isMenuOpen,
-          })}
-          onClick={() => {
-            setIsMenuOpen((state) => !state);
-          }}
-        >
-          {isMenuOpen ? (
-            <BiX aria-label='Menu' />
-          ) : (
+          <button
+              className={styles.navButton}
+              onClick={() => {
+                setIsMenuOpen((state) => !state);
+              }}
+          >
             <BiMenu aria-label='Menu' />
-          )}
-        </button>
-      </nav>
+          </button>
+        </nav>
 
-      <nav className={mobileMenuClassNames}>
-        <ul className={styles.mobileNavList}>
-          {localLinks.map((link) => (
-            <MenuItem key={link.id} onClick={closeMenu} {...link} />
-          ))}
-          <Link className={styles.link} href='/2023'>
-            I Edycja
-          </Link>
-        </ul>
-      </nav>
-    </header>
+        <nav className={mobileMenuClassNames}>
+          <ul className={styles.mobileNavList}>
+            {localLinks.map((link) => (
+                <MenuItem key={link.id} onClick={closeMenu} {...link} />
+            ))}
+            <Link className={style.link} href='/'>
+              Obecna edycja
+            </Link>
+          </ul>
+        </nav>
+      </header>
   );
 }

@@ -14,7 +14,7 @@ import {
 import styles from './Footer.module.scss';
 
 const MapPortal = dynamic(
-  () => import('@/app/2024/containers/MapDialog/MapDialog'),
+  () => import('@/app/2025/containers/MapDialog/MapDialog'),
   { ssr: false }
 );
 

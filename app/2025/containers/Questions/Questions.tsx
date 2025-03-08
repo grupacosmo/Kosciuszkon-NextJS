@@ -9,14 +9,14 @@ import { questionsData } from './data';
 
 import styles from './Questions.module.scss';
 
-const START_DATE = '2024-06-08T10:00:00';
-const END_DATE = '2024-06-09T17:00:00';
+const START_DATE = '2025-05-31T11:00:00';
+const END_DATE = '2025-06-01T11:00:00';
 
 export function Questions(): ReactElement {
   const disableCountdown = calcEndTime(END_DATE) < 0;
 
   return (
-    <section key='2024' className={styles.section}>
+    <section key='2025' className={styles.section}>
       <Countdown
         startDate={START_DATE}
         endDate={END_DATE}
@@ -28,10 +28,9 @@ export function Questions(): ReactElement {
           id='faq__form-label'
           label='Formularz rejestracyjny'
           arialLabel='faq__form-label'
-          href='https://forms.office.com/e/eH1rLsTQvK'
+          href='https://forms.office.com/pages/responsepage.aspx?id=8qzyXLSsHU-Adm7aPxge7fhxeA78Pb5Aq0eAlucyCmpUNlU1WDNEQkpOM1gwSVpSRUtKSE9TT1pIMy4u&route=shorturl'
           alt='Czarny sześciokąt z zielonym obramowaniem i ikoną formularza.'
           Icon={FaWpforms}
-          disabled
         />
         <HexagonLink
           id='faq__fb-evennt-label'

@@ -32,18 +32,11 @@ export function Header(): ReactElement {
           {localLinks.map((link) => (
             <MenuItem key={link.id} onClick={closeMenu} {...link} />
           ))}
-          {/*<Link className={styles.link} href='/2023'>*/}
-          {/*  I Edycja*/}
-          {/*</Link>*/}
-          {/*<Link className={styles.link} href='/2024'>*/}
-          {/*  II Edycja*/}
-          {/*</Link>*/}
-
           <div className={styles.dropdown}>
             <Link className={styles.link} href="">Poprzednie edycje</Link>
             <div className={styles.dropdownContent}>
-                <Link className={styles.dropdownContentLink} href=" "> I Edycja </Link>
-                <Link className={styles.dropdownContentLink} href=" "> II Edycja </Link>
+                <Link className={styles.dropdownContentLink} href="/2023"> I Edycja </Link>
+                <Link className={styles.dropdownContentLink} href="/2024"> II Edycja </Link>
             </div>
           </div>
         </ul>
