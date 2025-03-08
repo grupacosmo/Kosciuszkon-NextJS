@@ -99,8 +99,8 @@ export const contacts = [
   },
   {
     id: '2025-contact-5',
-    href: 'tel: +48 795-773-929',
-    label: '+48 795-773-929',
+    href: 'tel: +48 882-955-844',
+    label: '+48 882-955-844',
     Icon: FaPhoneAlt,
   },
 ];

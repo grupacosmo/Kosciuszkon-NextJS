@@ -9,7 +9,7 @@
   gap: $space-xl;
 }
 
-.linksContainer {
+.importantLinksContainer{
   display:grid;
   grid-template-columns: auto auto;
   width: 100%;
@@ -21,25 +21,43 @@
   gap: $space-xl;
 }
 
-.faq {
-  &Container {
-    max-width: 930px;
-    width: 100%;
-    min-height: 540px;
-    margin: $space-xl auto 0;
-    padding: 0 $space-l;
+
+.linksContainer {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 $space-xl;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: $space-xl;
+
+  @media (max-width: 768px){
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.importantLink{
+  position: relative;
+  display: inline-block;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: $header-h;
   }
 
-  &CollapsibleButton {
-    border-color: $color-main !important;
-    background-color: $color-background !important;
+  img {
+    width: 144px;
+    height: 144px;
+  }
 
-    & h4 {
-      color: $color-main !important;
-    }
-
-    & svg {
-      color: $color-main !important;
-    }
+  svg {
+    width: 60px;
+    height: 60px;
   }
 }
