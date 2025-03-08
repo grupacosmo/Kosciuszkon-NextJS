@@ -1,15 +1,22 @@
 'use client';
 
 import { ReactElement } from 'react';
-
-import { TopicPlaceholder } from './components/TopicPlaceholder';
-
+import { Slider } from '@/app/utils';
+import { SlideContent } from './components/SlideContent';
+import { sliderContent } from './data';
 import styles from './TopicList.module.scss';
 
 export function TopicList(): ReactElement {
   return (
     <section id='topic-list' className={styles.section}>
-      <TopicPlaceholder />
+      <Slider
+        render={SlideContent}
+        slides={sliderContent}
+        containerClassName={styles.sliderContainer}
+        nextButtonClassName={styles.nextSlideButton}
+        prevButtonClassName={styles.prevSlideButton}
+        dotsClassName={styles.dotsContainer}
+      />
     </section>
   );
 }

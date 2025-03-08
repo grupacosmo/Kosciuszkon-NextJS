@@ -19,7 +19,7 @@ export default function Home() {
       <SectionDivider name='o wydarzeniu' />
       <Informations />
       <SectionGradient />
-      <SectionDivider name='tematy' />
+      <SectionDivider name='temat' />
       <TopicList />
       <SectionGradient />
       <SectionDivider name='harmonogram' />

@@ -7,7 +7,6 @@ import { FooterContacts } from './components/FooterContact';
 import { FooterLinks } from './components/FooterLinks';
 import {
   visitUsLinks,
-  externalLinks,
   externalLinksWithIcons,
   contacts,
 } from './data';
@@ -35,9 +34,9 @@ export function Footer(): ReactElement {
         <article className={styles.contact}>
           <h3>Kontakt</h3>
           <FooterContacts
-            contactArray={contacts}
-            className={styles.contactItem}
-            containerClassName={styles.contactList}
+              contactArray={contacts}
+              className={styles.contactItem}
+              containerClassName={styles.contactList}
           />
           <button
             className={styles.contactButton}

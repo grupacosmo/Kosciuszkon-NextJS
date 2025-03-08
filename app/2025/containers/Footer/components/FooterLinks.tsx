@@ -1,5 +1,4 @@
 import { type ReactElement } from 'react';
-import Image, { type StaticImageData } from 'next/image';
 import { type IconType } from 'react-icons';
 
 type BaseLink = {
