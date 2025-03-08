@@ -36,7 +36,7 @@ export const visitUsLinks = [
 export const externalLinks = [
   {
     id: '2025-terms-1',
-    href: 'https://docs.google.com/document/d/1x8JgOqfPXVKXww0FCGjMU2WsuptS1Jix8pncwWYgNj0/edit?usp=sharing',
+    href: 'https://mckpk-my.sharepoint.com/:w:/g/personal/s_kosciuszkon_samorzad_pk_edu_pl/EQ9kM2q0gxJAl_ruJXlgCl8BDw4ZoBsNjcJ7-QMiZboU3g?e=eaWVTw',
     label: 'Regulamin',
   },
 ];

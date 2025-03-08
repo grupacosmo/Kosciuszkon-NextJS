@@ -10,11 +10,12 @@
 }
 
 .linksContainer {
+  display:grid;
+  grid-template-columns: auto auto;
   width: 100%;
   max-width: 930px;
   margin: 0 auto;
   padding: 0 $space-xl;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: $space-xl;
