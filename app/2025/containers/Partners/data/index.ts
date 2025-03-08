@@ -26,7 +26,7 @@ export const mainPartnerData = [
   {
     id: '2025-gold-sponsor-1',
     img: '/p2025/partners/main/hitachi.png',
-    link: 'https://www.hitachienergy.com/se/sv/careers/shape-tomorrow-today?utm_source=google&utm_medium=paid-search&utm_campaign=bu:marketing-and-communications~cc:euc~cn:always-on-hub-neu-2024-2025~co:~ff&gad_source=1&gclid=Cj0KCQiA8q--BhDiARIsAP9tKI1JBBAzaxFh0-jn5M2vXXsVhx2TiVhQ47r6FgOuy_KWJ1j8NISSEeAaAsdaEALw_wcB',
+    link: 'https://www.hitachienergy.com/se/sv',
     partnerName: 'Hitachi Energy',
     customClass: 'hitachi',
   },
