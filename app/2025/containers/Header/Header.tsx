@@ -19,6 +19,12 @@ export function Header(): ReactElement {
     [styles.menuOpen]: isMenuOpen,
   });
 
+    const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+      if (event.target.value) {
+        window.location.href = event.target.value;
+      }
+    }
+
   return (
     <header className={styles.section}>
       <nav className={styles.nav}>
@@ -26,9 +32,20 @@ export function Header(): ReactElement {
           {localLinks.map((link) => (
             <MenuItem key={link.id} onClick={closeMenu} {...link} />
           ))}
-          <Link className={styles.link} href='/2023'>
-            I Edycja
-          </Link>
+          {/*<Link className={styles.link} href='/2023'>*/}
+          {/*  I Edycja*/}
+          {/*</Link>*/}
+          {/*<Link className={styles.link} href='/2024'>*/}
+          {/*  II Edycja*/}
+          {/*</Link>*/}
+
+          <div className={styles.dropdown}>
+            <Link className={styles.link} href="">Poprzednie edycje</Link>
+            <div className={styles.dropdownContent}>
+                <Link className={styles.dropdownContentLink} href=" "> I Edycja </Link>
+                <Link className={styles.dropdownContentLink} href=" "> II Edycja </Link>
+            </div>
+          </div>
         </ul>
 
         <button
@@ -54,6 +71,9 @@ export function Header(): ReactElement {
           ))}
           <Link className={styles.link} href='/2023'>
             I Edycja
+          </Link>
+          <Link className={styles.link} href='/2024'>
+            II Edycja
           </Link>
         </ul>
       </nav>

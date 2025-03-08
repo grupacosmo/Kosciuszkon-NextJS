@@ -1,4 +1,4 @@
-@import '@/styles/2024/variables.scss';
+@import '@/styles/2025/variables.scss';
 
 .section {
   z-index: 20;
@@ -96,3 +96,46 @@
     font-size: $header-s;
   }
 }
+
+
+.dropdown {
+  position:relative;
+
+  &Content {
+    background-color: $color-black;
+    width: 100%;
+    position: absolute;
+    display: none;
+    padding: $space-s;
+    text-align: center;
+    &Link {
+      display: block;
+      padding-top: $space-xs;
+      font-size: $font-l;
+      color: $color-white;
+      pointer-events: all;
+
+      &:hover {
+        transition: 0.3s;
+        color: $color-main;
+      }
+
+      @include maxWidth($bp-tablet) {
+        font-size: $header-s;
+      }
+    }
+
+  }
+
+  &:hover &Content {
+      display:block;
+  }
+
+  & > .link {
+    pointer-events: none;
+    cursor: default;
+
+  }
+}
+
+
