@@ -27,7 +27,7 @@ export const visitUsLinks = [
   },
   {
     id: '2025-visit-4',
-    href: 'https://www.facebook.com/cosmopk.kn',
+    href: 'https://cosmo.pk.edu.pl',
     alt: 'Koło Naukowe Cosmo PK.',
     src: '/p2025/visit/cosmo.png',
   },
