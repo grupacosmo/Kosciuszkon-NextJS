@@ -1,4 +1,4 @@
-import '@/styles/2025/main.scss';
+import '@/styles/2024/main.scss';
 
 export const metadata = {
   metadataBase: new URL('https://kosciuszkon.pk.edu.pl/'),
