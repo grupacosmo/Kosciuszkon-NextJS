@@ -32,10 +32,17 @@ export const mainPartnerData = [
   },
   {
     id: '2025-gold-sponsor-2',
-    img: '/p2025/partners/main/princity.png',
+    img: '/p2025/partners/main/princity_dark_scr.png',
     link: 'https://princity.com',
     partnerName: 'Princity',
     customClass: 'princity',
+  },
+  {
+    id: '2025-gold-sponsor-3',
+    img: '/p2025/partners/main/sencity_white.png',
+    link: 'https://sencity.city',
+    partnerName: 'Sencity',
+    customClass: 'sencity',
   },
 ];
 
