@@ -27,9 +27,14 @@ export function Header(): ReactElement {
             {localLinks.map((link) => (
                 <MenuItem key={link.id} onClick={closeMenu} {...link} />
             ))}
-            <Link className={style.link} href='/'>
-              Obecna edycja
-            </Link>
+              <div className={styles.dropdown}>
+                  <Link className={styles.link} href="">Historia Edycji</Link>
+                  <div className={styles.dropdownContent}>
+                      <Link className={styles.dropdownContentLink} href="/2023"> I Edycja - 2023</Link>
+                      <Link className={styles.dropdownContentLink} href="/2024"> II Edycja - 2024 </Link>
+                      <Link className={styles.dropdownContentLink} href="/"> III Edycja - 2025 </Link>
+                  </div>
+              </div>
           </ul>
 
           <button
@@ -47,9 +52,15 @@ export function Header(): ReactElement {
             {localLinks.map((link) => (
                 <MenuItem key={link.id} onClick={closeMenu} {...link} />
             ))}
-            <Link className={style.link} href='/'>
-              Obecna edycja
-            </Link>
+              <Link className={styles.link} href='/2023'>
+                  I Edycja - 2023
+              </Link>
+              <Link className={styles.link} href='/2024'>
+                  II Edycja - 2024
+              </Link>
+              <Link className={styles.link} href='/'>
+                  III Edycja - 2025
+              </Link>
           </ul>
         </nav>
       </header>

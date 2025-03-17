@@ -41,7 +41,8 @@
 
 
 .mainPartnersGrid {
-  padding: $space-xl 0;
+  padding: $space-xs 0;
+
   grid-template-columns: 1fr 1fr;
 
   @include maxWidth($bp-desktop) {
