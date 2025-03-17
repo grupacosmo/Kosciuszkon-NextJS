@@ -16,11 +16,11 @@ export default function Home() {
     <main className='main'>
       <Header />
       <Hero />
-      <SectionDivider name='zapisy' />
-      <Enrolment />
       <SectionGradient />
       <SectionDivider name='o wydarzeniu' />
       <Informations />
+      <SectionDivider name='zapisy' />
+      <Enrolment />
       <SectionGradient />
       <SectionDivider name='harmonogram' />
       <Schedule />
