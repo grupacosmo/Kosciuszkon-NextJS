@@ -9,22 +9,12 @@
   gap: $space-xl;
 }
 
-.importantLinksContainer{
-  display:grid;
-  grid-template-columns: auto auto;
-  width: 100%;
-  max-width: 930px;
-  margin: 0 auto;
-  padding: 0 $space-xl;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: $space-xl;
-}
+
 
 
 .linksContainer {
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   max-width: 930px;
   margin: 0 auto;

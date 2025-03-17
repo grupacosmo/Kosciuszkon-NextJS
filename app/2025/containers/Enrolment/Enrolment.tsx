@@ -1,5 +1,5 @@
 import { type ReactElement } from 'react';
-import { FaWpforms, FaFacebookF, FaInstagram, FaLinkedin, FaDiscord} from 'react-icons/fa';
+import { FaWpforms} from 'react-icons/fa';
 import { VscLaw } from "react-icons/vsc";
 import { HexagonLink } from './components/HexagonLink';
 import { Countdown } from './components/Countdown';
@@ -21,7 +21,7 @@ export function Enrolment(): ReactElement {
         disabled={disableCountdown}
       />
 
-        <article className={styles.importantLinksContainer}>
+        <article className={styles.linksContainer}>
             <HexagonLink
                 id='faq__form-label'
                 label='Rejestracja'
@@ -29,7 +29,6 @@ export function Enrolment(): ReactElement {
                 href='https://forms.office.com/pages/responsepage.aspx?id=8qzyXLSsHU-Adm7aPxge7fhxeA78Pb5Aq0eAlucyCmpUNlU1WDNEQkpOM1gwSVpSRUtKSE9TT1pIMy4u&route=shorturl'
                 alt='Czarny sześciokąt z zielonym obramowaniem i ikoną formularza.'
                 Icon={FaWpforms}
-                className={styles.importantLink}
             />
             <HexagonLink
                 id='faq__form-label'
@@ -38,45 +37,8 @@ export function Enrolment(): ReactElement {
                 href='https://mckpk-my.sharepoint.com/:w:/g/personal/s_kosciuszkon_samorzad_pk_edu_pl/EQ9kM2q0gxJAl_ruJXlgCl8BDw4ZoBsNjcJ7-QMiZboU3g?e=eaWVTw'
                 alt='Czarny sześciokąt z zielonym obramowaniem i ikoną wagi.'
                 Icon={VscLaw}
-                className={styles.importantLink}
             />
-
         </article>
-      <article className={styles.linksContainer}>
-          <HexagonLink
-              id='faq__fb-evennt-label'
-              label='Facebook'
-              arialLabel='faq__fb-evennt-label'
-              href='https://www.facebook.com/kosciuszkon'
-              alt="Czarny sześciokąt z zielonym obramowaniem i ikoną Facebooka."
-              Icon={FaFacebookF}
-          />
-          <HexagonLink
-              id='faq__ig-evennt-label'
-              label='Instagram'
-              arialLabel='faq__ig-evennt-label'
-              href='https://www.instagram.com/kosciuszkon_pk/'
-              alt="Czarny sześciokąt z zielonym obramowaniem i ikoną Instagrama."
-              Icon={FaInstagram}
-          />
-          <HexagonLink
-              id='faq__linkedin-evennt-label'
-              label='Linkedin'
-              arialLabel='faq__linkedin-evennt-label'
-              href='https://www.linkedin.com/company/kosciuszkon/'
-              alt="Czarny sześciokąt z zielonym obramowaniem i ikoną Linkedin."
-              Icon={FaLinkedin}
-          />
-          <HexagonLink
-              id='faq__dc-evennt-label'
-              label='Discord'
-              arialLabel='faq__dc-evennt-label'
-              href='https://discord.gg/Ek57YxvpT5'
-              alt="Czarny sześciokąt z zielonym obramowaniem i ikoną Discorda."
-              Icon={FaDiscord}
-          />
-      </article>
-
     </section>
   );
 }

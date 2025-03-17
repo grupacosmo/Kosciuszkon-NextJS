@@ -9,6 +9,7 @@ import {
   Footer,
   SectionDivider,
   SectionGradient,
+  SocialMedia,
 } from './2025/containers';
 
 export default function Home() {
@@ -16,9 +17,9 @@ export default function Home() {
     <main className='main'>
       <Header />
       <Hero />
-      <SectionGradient />
       <SectionDivider name='o wydarzeniu' />
       <Informations />
+      <SectionGradient />
       <SectionDivider name='zapisy' />
       <Enrolment />
       <SectionGradient />
@@ -27,6 +28,9 @@ export default function Home() {
       <SectionGradient />
       <SectionDivider name='faq' />
       <Questions/>
+      <SectionGradient />
+      <SectionDivider name='Sociale' />
+      <SocialMedia />
       <SectionGradient />
       <SectionDivider name='partnerzy' />
       <Partners />
