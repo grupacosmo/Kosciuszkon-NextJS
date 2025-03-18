@@ -11,7 +11,13 @@ import {
   contacts,
 } from './data';
 import styles from './Footer.module.scss';
-
+import {IconType} from "react-icons";
+type Contact = {
+  id: string;
+  href: string;
+  label: string;
+  Icon: IconType;
+};
 const MapPortal = dynamic(
   () => import('@/app/2025/containers/MapDialog/MapDialog'),
   { ssr: false }
@@ -34,7 +40,7 @@ export function Footer(): ReactElement {
         <article className={styles.contact}>
           <h3>Kontakt</h3>
           <FooterContacts
-              contactArray={contacts}
+              contactArray={contacts as Contact[]}
               className={styles.contactItem}
               containerClassName={styles.contactList}
           />
