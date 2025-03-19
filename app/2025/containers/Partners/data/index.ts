@@ -32,7 +32,7 @@ export const mainPartnerData = [
   },
   {
     id: '2025-gold-sponsor-2',
-    img: '/p2025/partners/main/princity_dark_scr.png',
+    img: '/p2025/partners/main/princity_white.png',
     link: 'https://princity.com',
     partnerName: 'Princity',
     customClass: 'princity',
