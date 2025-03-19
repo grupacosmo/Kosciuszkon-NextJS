@@ -17,7 +17,7 @@ export function Partners(): ReactElement {
       <PartnersGrid
           partnerArray={mainPartnerData}
           categoryName='Partnerzy główni'
-          containerClassName={clsx(styles.grid, styles.eventPartnersGrid)}
+          containerClassName={clsx(styles.grid, styles.mainPartnersGrid)} //powinno byc mainPartnersGrid
       />
 
       <PartnersGrid

@@ -43,17 +43,8 @@
 .mainPartnersGrid {
   padding: $space-xs 0;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
-
-  & > *:nth-child(3) {
-    grid-column: span 2;
-    justify-self: center;
-
-    @include maxWidth($bp-desktop) {
-      grid-column: auto;
-    }
-  }
 
   @include maxWidth($bp-desktop) {
     grid-template-columns: 1fr;
@@ -118,7 +109,7 @@
 
   div:nth-child(3n) {
     img {
-      width: 80px;
+      width: 284px;
       height: auto;
 
       @include maxWidth($bp-mobile) {
@@ -179,3 +170,4 @@
     }
   }
 }
+
