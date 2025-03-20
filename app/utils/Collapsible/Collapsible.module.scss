@@ -3,6 +3,8 @@
 .container {
   position: relative;
   width: 100%;
+
+
 }
 
 .button {
@@ -38,11 +40,11 @@
 }
 
 .content {
-  z-index: 0;
-  position: relative;
-  padding: $space-m $space-s $space-l $space-s;
 
   & p {
+    z-index: 0;
+    position: relative;
+    padding: $space-m $space-s $space-l $space-s;
     font-size: $font-l;
 
     @include maxWidth($bp-mobile) {
@@ -51,6 +53,9 @@
   }
 }
 
+.contentClosed {
+  display: none;
+}
 .iconDown {
   transform: rotate(90deg);
 }
