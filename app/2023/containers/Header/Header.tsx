@@ -3,7 +3,7 @@
 import { useState, type ReactElement } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { BiMenu } from 'react-icons/bi';
+import {BiMenu, BiX} from 'react-icons/bi';
 import { MenuItem } from './components/MenuItem';
 import { localLinks } from './data';
 import styles from './Header.module.scss';
@@ -38,12 +38,18 @@ export function Header(): ReactElement {
         </ul>
 
         <button
-          className={styles.navButton}
+            className={clsx(styles.navButton, {
+              [styles.mobileNavButton]: isMenuOpen,
+            })}
           onClick={() => {
             setIsMenuOpen((state) => !state);
           }}
         >
-          <BiMenu aria-label='Menu' />
+          {isMenuOpen ? (
+              <BiX aria-label='Menu' />
+          ) : (
+              <BiMenu aria-label='Menu' />
+          )}
         </button>
       </nav>
 

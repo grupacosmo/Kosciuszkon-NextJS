@@ -19,12 +19,6 @@ export function Header(): ReactElement {
     [styles.menuOpen]: isMenuOpen,
   });
 
-    const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-      if (event.target.value) {
-        window.location.href = event.target.value;
-      }
-    }
-
   return (
     <header className={styles.section}>
       <nav className={styles.nav}>
@@ -50,6 +44,7 @@ export function Header(): ReactElement {
             setIsMenuOpen((state) => !state);
           }}
         >
+
           {isMenuOpen ? (
             <BiX aria-label='Menu' />
           ) : (
