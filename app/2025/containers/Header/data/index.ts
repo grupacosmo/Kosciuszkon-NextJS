@@ -4,6 +4,7 @@ export const localLinks = [
   //{ id: '3', label: 'Tematy turnieju', href: '#tematy' },
   { id: '4', label: 'Harmonogram', href: '#harmonogram' },
   { id: '5', label: 'FAQ', href: '#faq' },
-  // { id: '6', label: 'Partnerzy', href: '#partnerzy' },
-  { id: '7', label: 'Kontakt', href: '#kontakt' },
+  //{ id: '6', label: 'Social Media', href: '#sociale' },
+  // { id: '7', label: 'Partnerzy', href: '#partnerzy' },
+  { id: '8', label: 'Kontakt', href: '#kontakt' },
 ];

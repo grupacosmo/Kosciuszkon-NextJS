@@ -29,7 +29,7 @@ export default function Home() {
       <SectionDivider name='faq' />
       <Questions/>
       <SectionGradient />
-      <SectionDivider name='Sociale' />
+      <SectionDivider name='social media' />
       <SocialMedia />
       <SectionGradient />
       <SectionDivider name='partnerzy' />
