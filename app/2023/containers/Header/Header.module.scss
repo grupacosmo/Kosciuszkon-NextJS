@@ -98,16 +98,22 @@
 }
 
 
+
 .dropdown {
   position:relative;
+  height: auto;
 
   &Content {
+    border-bottom: 4px solid $color-main;
     background-color: $color-black;
-    width: 150%;
+    width: 130%;
     position: absolute;
     display: none;
     text-align: center;
-    left: -30px;
+    left: -20px;
+
+    padding: $space-xs 0 $space-xs;
+
     &Link {
       display: block;
       padding-top: $space-xs;
@@ -136,6 +142,7 @@
     cursor: default;
 
   }
+  .dropdownContentLink {
+    padding: $space-s 0 $space-s;
+  }
 }
-
-
