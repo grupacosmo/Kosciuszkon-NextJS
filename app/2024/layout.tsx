@@ -1,7 +1,7 @@
 import '@/styles/2024/main.scss';
 
 export const metadata = {
-  metadataBase: new URL('https://kosciuszkon.pk.edu.pl/'),
+  metadataBase: new URL('https://kosciuszkon.pk.edu.pl/2024'),
   title: 'Kościuszkon - II Edycja 2024',
   description: `Druga edycja hackathonu organizowanego przez Wydział
   Informatyki i Telekomunikacji Politechniki Krakowskiej. Wydarzenie odbędzie się 8 czerwca 2024 roku o godzinie 12:00 w klubie Kwadrat.
@@ -13,7 +13,7 @@ export const metadata = {
         url: '/og-image.jpg',
         width: 2048,
         height: 2048,
-        alt: 'Logo heckathonu Kościuszkon',
+        alt: 'Logo hackathonu Kościuszkon',
       },
     ],
   },

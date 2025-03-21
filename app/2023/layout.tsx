@@ -14,7 +14,7 @@ export const metadata = {
         url: '/og-image.jpg',
         width: 2048,
         height: 2048,
-        alt: 'Logo heckathonu Kościuszkon',
+        alt: 'Logo hackathonu Kościuszkon',
       },
     ],
   },
