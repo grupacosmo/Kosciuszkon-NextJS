@@ -7,6 +7,12 @@ export const metadata = {
   Informatyki i Telekomunikacji Politechniki Krakowskiej. Pierwsza edycja odbyło się 5 marca 2023 roku o godzinie 11:00.
   Głównymi tematami wydarzenia było zdrowie psychiczne, zdrowie fizyczne oraz kultura i rozrywka.
   Na uczestników czekały 24 godziny pracy nad ciekawym wyzwaniem, dobra zabawa oraz liczne atrakcje.`,
+  robots: {
+    nosnippet: true,
+    googleBot: {
+      nosnippet:true,
+    }
+  },
   openGraph: {
     type: 'website',
     images: [
