@@ -13,9 +13,8 @@
   @include maxWidth($bp-desktop) {
     bottom: 10%;
     left: 50%;
-    transform: unset;
-    height: 100%;
-    transform: translate(-50%, 25%);
+    height: fit-content;
+    transform: translate(-50%, 10%);
   }
 
   @include maxWidth($bp-mobile) {
