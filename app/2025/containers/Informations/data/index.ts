@@ -1,23 +1,23 @@
 export const sliderContent = [
   {
-    id: '2025-slied-1',
+    id: '2025-slide-1',
     image: {
       src: '/p2025/bcg/kwadrat.jpg',
       alt: 'Budynek w którym mieści się studio kwadrat.',
     },
     content: {
-      title: 'Czym jest Kościuszkon',
-      text: `Jeśli lubisz programować, prezentować, projektować lub masz po prostu dużo świetnych
-      pomysłów i czas w weekend, to wpadnij ze znajomymi na nasze wydarzenie. To już III edycja
-      Kościuszkonu, organizowanego przez Fundację PK, WRRS WiiT i WRSS WIEIK oraz koło Cosmo
-      PK.`,
+      title: 'Czym jest Kościuszkon?',
+      text: `Kościuszkon to hackathon organizowany przez Fundację PK, WRRS WiiT, WRSS WIEiK. 
+      Jeśli lubisz programować, prezentować, projektować lub masz po prostu dużo świetnych
+      pomysłów i czas w weekend, to wpadnij ze znajomymi. To już III edycja tego wspaniałego
+      wydarzenia! `,
     },
   },
   {
-    id: '2025-slied-2',
+    id: '2025-slide-2',
     image: {
-      src: '/p2025/bcg/kodowanie.jpg',
-      alt: 'Uczestnicy hackathonu, którzy piszą kod.',
+      src: '/p2025/bcg/wydarzenie_live.jpg',
+      alt: 'Kamerzysta nagrywający wywiad.',
     },
     content: {
       title: 'Hackathon',
@@ -26,6 +26,48 @@ export const sliderContent = [
       sprzedać pomysł i szybko się uczysz nowych technologii? Zbierz
       drużynę lub zapisz się, a my ją dla Ciebie znajdziemy. 
       Temat ujawnimy podczas wydarzenia. Dla uczestników zapewniamy jedzenie, napoje oraz miejsce do super zabawy!`,
+    },
+  },
+  {
+    id: '2025-slide-3',
+    image: {
+      src: '/p2025/bcg/kwadrat_napis.jpg',
+      alt: 'Napis "Kwadrat" na drzwiach przed wejściem do klubu.',
+    },
+    content: {
+      title: 'Przebieg wydarzenia',
+      text: `Konkursowi uczestnicy mają 24 godziny na przedstawienie swojego rozwiązania dla wyznaczonego problemu. 
+      Projekty zostaną ocenione przez jury, w skład którego wchodzą partnerzy wydarzenia oraz pracownicy Politechniki Krakowskiej.`,
+    },
+  },
+  {
+    id: '2025-slide-4',
+    image: {
+      src: '/p2025/bcg/fotoramka_gigachad_aura.jpg',
+      alt: 'Zdjęcie z fotoramki, osoby wskazującej palcem w stronę fotografa.',
+    },
+    content: {
+      title: 'Atrakcje',
+      text: `Podczas wydarzenia nie zabraknie rozrywki i okazji do integracji! Uczestnicy w wolnej chwili 
+      będą mogli zrelaksować się przy grach planszowych, PlayStation oraz wziąć udział w emocjonującym quizie 
+      inspirowanym popularnymi teleturniejami, takimi jak Va Banque czy Familiada. To doskonała okazja, 
+      aby połączyć dobrą zabawę z odrobiną rywalizacji i sprawdzić swoją wiedzę w luźnej, przyjaznej atmosferze!
+      Dodatkowo na uczestników czeka specjalna fotoramka, dzięki której będzie można uwiecznić najlepsze 
+      chwile wydarzenia i zabrać ze sobą pamiątkowe zdjęcia!`,
+    },
+  },
+  {
+    id: '2025-slide-5',
+    image: {
+      src: '/p2025/bcg/prezentacja.jpg',
+      alt: 'Kadr z targów pracy.',
+    },
+    content: {
+      title: 'Sesja mentoringowa',
+      text: `Podczas wydarzenia czeka na Was wyjątkowa okazja do rozmów z doświadczonymi specjalistami. 
+      Sesja mentoringowa będzie nie tylko szansą na networking, ale także cennym wsparciem 
+      w dopracowaniu Waszego projektu podczas hackathonu. 
+      To idealny moment, aby uzyskać wskazówki, rozwiązać problemy i wzmocnić swoją koncepcję przed prezentacją!`,
     },
   },
 ];
