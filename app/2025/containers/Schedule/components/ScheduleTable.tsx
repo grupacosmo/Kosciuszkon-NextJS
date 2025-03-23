@@ -1,13 +1,6 @@
 import { type ReactElement } from 'react';
-import { motion } from 'framer-motion';
 import { ScheduleElement } from './ScheduleElement';
 import styles from './ScheduleTable.module.scss';
-
-const MOTION_CONFIG = {
-  initial: { opacity: 0 },
-  animate: { opacity:1 },
-  transition: { duration: 0.4, ease: 'easeOut' },
-};
 
 type Schedule = {
   id: string;
@@ -30,7 +23,7 @@ export function ScheduleTable({
   secondArray,
 }: ScheduleTableProps): ReactElement {
   return (
-    <motion.div {...MOTION_CONFIG} className={styles.container}>
+    <div className={styles.container}>
       <article>
         <h3>{firstTitle}</h3>
         <div>
@@ -46,7 +39,7 @@ export function ScheduleTable({
             <ScheduleElement key={id} {...restProps} />
           ))}
         </div>
-      </article>
-    </motion.div>
+        </article>
+    </div>
   );
 }

@@ -51,6 +51,11 @@ export function Collapsible({
         </motion.div>
       </AnimatePresence>
 
+      <noscript>
+        <div className={clsx(styles.content)}>
+          {children}
+        </div>
+      </noscript>
     </div>
   );
 }
