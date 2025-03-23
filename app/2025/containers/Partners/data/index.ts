@@ -68,6 +68,13 @@ export const eventPartnersData = [
     partnerName: 'Trawell',
     customClass: 'trawell',
   },
+  {
+    id: '2025-event-partner-4',
+    img: '/p2025/partners/standard/N-iX_orange_white.png',
+    link: 'https://www.n-ix.com',
+    partnerName: 'N-ix',
+    customClass: 'n-ix',
+  },
 ];
 
 export const mediaPartnersData = [

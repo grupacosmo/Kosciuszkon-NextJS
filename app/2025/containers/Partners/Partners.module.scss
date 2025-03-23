@@ -15,7 +15,7 @@
 }
 
 .honoraryPartnersGrid {
-  padding: $space-xl 0;
+  padding: $space-xl 0 $space-xl;
   grid-template-columns: 1fr 1fr 1fr;
 
   @include maxWidth($bp-desktop) {
@@ -41,10 +41,9 @@
 
 
 .mainPartnersGrid {
-  padding: $space-xs 0;
+  padding: $space-s 0 $space-s 0;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-
 
   @include maxWidth($bp-desktop) {
     grid-template-columns: 1fr;
@@ -54,8 +53,6 @@
   @include maxWidth($bp-mobile) {
     grid-template-columns: 1fr;
   }
-
-
 
   img {
     width: 429px;
@@ -74,14 +71,20 @@
 }
 
 .eventPartnersGrid {
-  padding: $space-h 0 $space-xl 0;
+  padding: $space-xl 0 0 0;
   grid-template-columns: 1fr 1fr 1fr;
+
+  & > div {
+    padding: $space-xl;
+  }
 
   @include maxWidth($bp-tablet) {
     grid-template-columns: 1fr;
     gap: $space-xl;
     padding: $space-h 0 0 0;
   }
+
+
 
   div:first-child {
     img {
@@ -140,7 +143,7 @@
 }
 
 .mediaPartnersGrid {
-  padding: $space-h 0;
+  padding: $space-s 0 $space-s 0;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
