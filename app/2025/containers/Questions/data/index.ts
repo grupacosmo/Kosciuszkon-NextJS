@@ -7,7 +7,7 @@ export const questionsData = [
   {
     id: '2025-question-2',
     title: 'Czy na wydarzenie obowiązują zapisy? Kto może się zapisać?',
-    text: 'Zapisy na Hackathon są obowiązkowe, link do formularza dostępny jest na stronie.',
+    text: 'Zapisy na Hackathon są obowiązkowe, link do formularza dostępny jest na stronie. Wziąć udział w wydarzeniu może osoba pełnoletnia ze statusem studenta lub ucznia.',
   },
   {
     id: '2025-question-3',
