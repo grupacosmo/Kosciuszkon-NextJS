@@ -2,7 +2,7 @@ export const sliderContent = [
   {
     id: '2025-slide-1',
     image: {
-      src: '/p2025/bcg/kwadrat.jpg',
+      src: '/p2025/bcg/kwadrat.webp',
       alt: 'Budynek w którym mieści się studio kwadrat.',
     },
     content: {
@@ -16,7 +16,7 @@ export const sliderContent = [
   {
     id: '2025-slide-2',
     image: {
-      src: '/p2025/bcg/wydarzenie_live.jpg',
+      src: '/p2025/bcg/wydarzenie_live.webp',
       alt: 'Kamerzysta nagrywający wywiad.',
     },
     content: {
@@ -31,7 +31,7 @@ export const sliderContent = [
   {
     id: '2025-slide-3',
     image: {
-      src: '/p2025/bcg/kwadrat_napis.jpg',
+      src: '/p2025/bcg/kwadrat_napis.webp',
       alt: 'Napis "Kwadrat" na drzwiach przed wejściem do klubu.',
     },
     content: {
@@ -43,7 +43,7 @@ export const sliderContent = [
   {
     id: '2025-slide-4',
     image: {
-      src: '/p2025/bcg/fotoramka_gigachad_aura.jpg',
+      src: '/p2025/bcg/fotoramka_gigachad_aura.webp',
       alt: 'Zdjęcie z fotoramki, osoby wskazującej palcem w stronę fotografa.',
     },
     content: {
@@ -59,7 +59,7 @@ export const sliderContent = [
   {
     id: '2025-slide-5',
     image: {
-      src: '/p2025/bcg/prezentacja.jpg',
+      src: '/p2025/bcg/prezentacja.webp',
       alt: 'Kadr z targów pracy.',
     },
     content: {
