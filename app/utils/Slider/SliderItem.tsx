@@ -1,57 +1,66 @@
 import { type ReactElement } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './SliderItem.module.scss';
+import clsx from 'clsx';
 
 const MOTION_CONFIG = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  transition: { duration: 0.4, ease: 'easeOut' },
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    transition: { duration: 0.4, ease: 'easeOut' },
 };
 
 type SlideImage = {
-  src: string;
-  alt: string;
+    src: string;
+    alt: string;
+    imageClass?: string; // New property for custom image-specific CSS class
 };
 
 export type SlideData = {
-  id: string;
-  image?: SlideImage;
-  content: any;
+    id: string;
+    image?: SlideImage;
+    content: any;
 };
 
 type SingleSlideProps = {
-  slide: SlideData;
-  render: (content: any) => ReactElement | null;
-  isActive: boolean;
+    slide: SlideData;
+    render: (content: any) => ReactElement | null;
+    isActive: boolean;
 };
 
 export function SingleSlide({
-  slide: { image, content },
-  render,
-  isActive,
-}: SingleSlideProps): ReactElement | null {
-  if (!isActive) {
-    return null;
-  }
+                                slide: { image, content },
+                                render,
+                                isActive,
+                            }: SingleSlideProps): ReactElement | null {
+    if (!isActive) {
+        return null;
+    }
 
-  return (
-    <>
-      {isActive && (
-        <AnimatePresence>
-          <motion.article {...MOTION_CONFIG} className={styles.slide}>
-            {image && (
-              <picture className={styles.slidePicture}>
-                <img
-                  className={styles.slideImg}
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </picture>
+    return (
+        <>
+            {isActive && (
+                <AnimatePresence>
+                    <motion.article {...MOTION_CONFIG} className={styles.slide}>
+                        {image && (
+                            <picture
+                                className={clsx(
+                                    styles.slidePicture,
+                                )}
+                            >
+                                <img
+                                    className={clsx(
+                                        styles.slideImg,
+                                        image.imageClass // Add custom image-specific class
+                                    )}
+                                    src={image.src}
+                                    alt={image.alt}
+                                />
+                            </picture>
+                        )}
+                        {render(content)}
+                    </motion.article>
+                </AnimatePresence>
             )}
-            {render(content)}
-          </motion.article>
-        </AnimatePresence>
-      )}
-    </>
-  );
+        </>
+    );
 }

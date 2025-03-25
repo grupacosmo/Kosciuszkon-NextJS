@@ -1,0 +1,16 @@
+@import '@/styles/2025/variables.scss';
+
+@include maxWidth($bp-mobile) {
+  .slideImage2 {
+    object-position: left;
+  }
+
+  .slideImage3 {
+    object-position: 17% -120px;
+  }
+
+  .slideImage5 {
+    object-position: 30%;
+  }
+
+}
