@@ -15,7 +15,7 @@ export function Hero(): ReactElement {
       </div>
 
       <div className={styles.videoContainer}>
-        <video autoPlay muted loop>
+        <video autoPlay muted loop playsInline>
           <source src='/p2025/video.webm' type='video/webm' />
           <source src='/p2025/video.mp4' type='video/mp4' />
         </video>

@@ -49,7 +49,7 @@ export function Footer(): ReactElement {
             type='button'
             onClick={() => setIsMapOpen(true)}
           >
-            <FaLocationDot /> Pokaż Mapę
+            <FaLocationDot color="white" /> <a style={{ color: 'white'}}>Pokaż Mapę</a>
           </button>
         </article>
 
