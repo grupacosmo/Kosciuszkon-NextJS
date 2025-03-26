@@ -75,6 +75,13 @@ export const eventPartnersData = [
     partnerName: 'N-ix',
     customClass: 'n-ix',
   },
+  {
+    id: '2025-event-partner-5',
+    img: '/p2025/partners/standard/EPAM_LOGO_White.png',
+    link: 'https://www.epam.com',
+    partnerName: 'EPAM',
+    customClass: 'epam',
+  }
 ];
 
 export const mediaPartnersData = [

@@ -27,9 +27,9 @@ export const visitUsLinks = [
   },
   {
     id: '2025-visit-4',
-    href: 'https://cosmo.pk.edu.pl',
-    alt: 'Koło Naukowe Cosmo PK.',
-    src: '/p2025/visit/cosmo.png',
+    href: 'https://visgraph.pk.edu.pl',
+    alt: 'Koło Naukowe Visgraph.',
+    src: '/p2025/visit/visgraph.png',
   },
 ];
 
@@ -53,18 +53,30 @@ export const externalLinksWithIcons = [
   },
   {
     id: '2025-external-3',
+    href: 'https://www.facebook.com/visgraph',
+    label: 'Visgraph',
+    Icon: FaFacebookF,
+  },
+  {
+    id: '2025-external-4',
     href: 'https://www.facebook.com/cosmopk.kn',
     label: 'Cosmo PK',
     Icon: FaFacebookF,
   },
   {
-    id: '2025-external-4',
+    id: '2025-external-5',
     href: 'https://www.instagram.com/wrss_wiit_pk/',
     label: 'WRSS WIiT',
     Icon: FaInstagram,
   },
   {
-    id: '2025-external-5',
+    id: '2025-external-6',
+    href: 'https://www.instagram.com/vis.graph/',
+    label: 'Visgraph',
+    Icon: FaInstagram,
+  },
+  {
+    id: '2025-external-7',
     href: 'https://www.instagram.com/cosmopk_kn/',
     label: 'Cosmo PK',
     Icon: FaInstagram,
