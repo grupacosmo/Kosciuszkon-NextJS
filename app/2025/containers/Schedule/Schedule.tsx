@@ -16,9 +16,9 @@ export function Schedule(): ReactElement {
       </div>
       <AnimatePresence>
         <ScheduleTable
-          firstTitle='Sobota'
+          firstTitle='Sobota (31.05)'
           firstArray={scheduleData.hackathon.sunday}
-          secondTitle='Niedziela'
+          secondTitle='Niedziela (01.06)'
           secondArray={scheduleData.hackathon.monday}
         />
       </AnimatePresence>

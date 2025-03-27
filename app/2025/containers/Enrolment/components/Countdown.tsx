@@ -9,6 +9,7 @@ import hex from '../../../assets/svg/hex-timer.svg';
 import { calcEndTime, calcProps, calcStartTime } from './utils';
 
 import styles from './Countdown.module.scss';
+import {start} from "node:repl";
 
 const Timer = dynamic(() => import('@/app/utils/Timer/Timer'), { ssr: false });
 
@@ -44,7 +45,10 @@ export function Countdown({
     <article
       className={clsx(styles.container, { [styles.disabled]: disabled })}
     >
+      <div className={styles.textWrapper}>
       <h3>{header}</h3>
+      <h2>({new Date(startDate).toLocaleDateString()} {new Date(startDate).getHours()}:{new Date(startDate).getMinutes()})</h2>
+      </div>
       <div className={styles.countdown}>
         <Timer time={time} className={styles.timer} />
         <Image

@@ -7,8 +7,8 @@ import { calcEndTime } from './components/utils';
 
 import styles from './Enrolment.module.scss';
 
-const START_DATE = '2025-05-31T11:00:00';
-const END_DATE = '2025-06-01T11:00:00';
+const START_DATE = '2025-05-31T10:30:00';
+const END_DATE = '2025-06-01T17:30:00';
 
 export function Enrolment(): ReactElement {
   const disableCountdown = calcEndTime(END_DATE) < 0;
