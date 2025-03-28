@@ -48,7 +48,7 @@ export const scheduleData = {
         title: 'Pizza time!',
         time: '21:00 - 21:30',
         description: '',
-       },
+      },
     ],
     monday: [
       {

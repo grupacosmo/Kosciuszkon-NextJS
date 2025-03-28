@@ -7,10 +7,10 @@ export const metadata = {
   Informatyki i Telekomunikacji Politechniki Krakowskiej. Wydarzenie odbędzie się 8 czerwca 2024 roku o godzinie 12:00 w klubie Kwadrat.
   Na uczestników czekają 24 godziny pracy nad ciekawym wyzwaniem, dobra zabawa oraz wspaniałe nagrody.`,
   robots: {
+    nosnippet: true,
+    googleBot: {
       nosnippet: true,
-      googleBot: {
-        nosnippet:true,
-      }
+    },
   },
   openGraph: {
     type: 'website',
@@ -25,12 +25,6 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-      <>{children}</>
-  );
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }

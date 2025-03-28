@@ -1,9 +1,4 @@
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaPhoneAlt,
-  FaEnvelope,
-} from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 export const visitUsLinks = [
   {

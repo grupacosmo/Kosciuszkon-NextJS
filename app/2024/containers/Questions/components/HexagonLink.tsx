@@ -36,7 +36,7 @@ export function HexagonLink({
     return (
       <div className={containerClassNames}>
         <h3 id={id}>{label}</h3>
-        <a className={styles.link} role='link' aria-disabled='true'>
+        <a className={styles.link} role="link" aria-disabled="true">
           <Icon />
           <Image src={hex} alt={alt} width={96} height={96} />
         </a>
@@ -51,8 +51,8 @@ export function HexagonLink({
         className={styles.link}
         href={href}
         aria-labelledby={arialLabel}
-        target='_blank'
-        rel='noreferrer'
+        target="_blank"
+        rel="noreferrer"
       >
         <Icon />
         <Image src={hex} alt={alt} width={96} height={96} />

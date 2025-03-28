@@ -12,7 +12,7 @@ type FooterContactsProps = {
   contactArray: Contact[];
   containerClassName?: string;
   className?: string;
-} ;
+};
 
 export function FooterContacts({
   contactArray,

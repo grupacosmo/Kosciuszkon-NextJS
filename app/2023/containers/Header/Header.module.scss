@@ -97,10 +97,8 @@
   }
 }
 
-
-
 .dropdown {
-  position:relative;
+  position: relative;
   height: auto;
 
   &Content {
@@ -130,17 +128,15 @@
         font-size: $header-s;
       }
     }
-
   }
 
   &:hover &Content {
-    display:block;
+    display: block;
   }
 
   & > .link {
     pointer-events: none;
     cursor: default;
-
   }
   .dropdownContentLink {
     padding: $space-s 0 $space-s;

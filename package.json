@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "next:lint": "next lint",
+    "lint": "npx prettier . --check",
+    "lint:stage": "npx prettier . --write"
+    
   },
   "dependencies": {
     "@types/node": "22.13.11",
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@types/leaflet": "^1.9.16",
     "@types/react-leaflet": "^3.0.0",
+    "prettier": "3.5.3",
     "sass": "1.63.6"
   }
 }

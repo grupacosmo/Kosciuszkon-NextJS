@@ -9,11 +9,8 @@
   gap: $space-xl;
 }
 
-
-
-
 .linksContainer {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
   max-width: 930px;
@@ -23,12 +20,12 @@
   justify-content: space-around;
   gap: $space-xl;
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.importantLink{
+.importantLink {
   position: relative;
   display: inline-block;
 

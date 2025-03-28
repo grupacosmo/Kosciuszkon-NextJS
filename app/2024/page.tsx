@@ -13,22 +13,22 @@ import {
 
 export default function Home() {
   return (
-    <main className='main'>
+    <main className="main">
       <Header />
       <Hero />
-      <SectionDivider name='o wydarzeniu' />
+      <SectionDivider name="o wydarzeniu" />
       <Informations />
       <SectionGradient />
-      <SectionDivider name='temat' />
+      <SectionDivider name="temat" />
       <TopicList />
       <SectionGradient />
-      <SectionDivider name='harmonogram' />
+      <SectionDivider name="harmonogram" />
       <Schedule />
       <SectionGradient />
-      <SectionDivider name='zapisy' />
+      <SectionDivider name="zapisy" />
       <Questions />
       <SectionGradient />
-      <SectionDivider name='partnerzy' />
+      <SectionDivider name="partnerzy" />
       <Partners />
       <Footer />
     </main>

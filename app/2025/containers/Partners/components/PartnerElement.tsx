@@ -16,7 +16,7 @@ export function PartnerElement({
 }: PartnerElementProps): ReactElement {
   return (
     <div className={customClass}>
-      <a href={link} target='_blank' rel='noreferrer' aria-label={partnerName}>
+      <a href={link} target="_blank" rel="noreferrer" aria-label={partnerName}>
         <img src={img} alt={partnerName} />
       </a>
     </div>

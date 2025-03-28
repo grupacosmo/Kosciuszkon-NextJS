@@ -73,11 +73,11 @@ export function Slider({
       ))}
 
       <button className={nextButtonClassNames} onClick={nextSlide}>
-        <BiCaretRight aria-label='Następny slajd' />
+        <BiCaretRight aria-label="Następny slajd" />
       </button>
 
       <button className={prevButtonClassNames} onClick={prevSlide}>
-        <BiCaretLeft aria-label='Poprzedni slajd' />
+        <BiCaretLeft aria-label="Poprzedni slajd" />
       </button>
 
       <div className={dotsClassNames}>

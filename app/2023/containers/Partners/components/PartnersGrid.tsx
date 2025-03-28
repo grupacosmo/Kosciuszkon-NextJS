@@ -19,11 +19,7 @@ export function PartnersGrid({
       {categoryName && <h4 className={styles.header}>{categoryName}</h4>}
       <div className={containerClassName}>
         {partnerArray.map((element) => (
-          <PartnerElement
-            key={element.id}
-            className={elementClassName}
-            {...element}
-          />
+          <PartnerElement key={element.id} className={elementClassName} {...element} />
         ))}
       </div>
     </article>

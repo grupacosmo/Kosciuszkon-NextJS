@@ -9,8 +9,8 @@ export const metadata = {
   robots: {
     nosnippet: true,
     googleBot: {
-      nosnippet:true,
-    }
+      nosnippet: true,
+    },
   },
   openGraph: {
     type: 'website',
@@ -25,13 +25,9 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='pl'>
+    <html lang="pl">
       <body>{children}</body>
     </html>
   );

@@ -81,7 +81,7 @@ export const eventPartnersData = [
     link: 'https://www.epam.com',
     partnerName: 'EPAM',
     customClass: 'epam',
-  }
+  },
 ];
 
 export const mediaPartnersData = [

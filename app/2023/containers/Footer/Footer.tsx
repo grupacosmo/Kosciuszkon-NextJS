@@ -5,23 +5,17 @@ import dynamic from 'next/dynamic';
 import { FaLocationDot } from 'react-icons/fa6';
 import { FooterContacts } from './components/FooterContact';
 import { FooterLinks } from './components/FooterLinks';
-import {
-  visitUsLinks,
-  externalLinks,
-  externalLinksWithIcons,
-  contacts,
-} from './data';
+import { visitUsLinks, externalLinks, externalLinksWithIcons, contacts } from './data';
 import styles from './Footer.module.scss';
 
-const MapPortal = dynamic(
-  () => import('@/app/2023/containers/MapDialog/MapDialog'),
-  { ssr: false }
-);
+const MapPortal = dynamic(() => import('@/app/2023/containers/MapDialog/MapDialog'), {
+  ssr: false,
+});
 
 export function Footer(): ReactElement {
   const [isMapOpen, setIsMapOpen] = useState<boolean>(false);
   return (
-    <footer className={styles.footer} id='kontakt'>
+    <footer className={styles.footer} id="kontakt">
       <section className={styles.footerContainer}>
         <article className={styles.visit}>
           <h3>Odwiedź nas</h3>
@@ -39,12 +33,8 @@ export function Footer(): ReactElement {
             className={styles.contactItem}
             containerClassName={styles.contactList}
           />
-          <button
-            className={styles.contactButton}
-            type='button'
-            onClick={() => setIsMapOpen(true)}
-          >
-            <FaLocationDot color="white" /> <a style={{ color: 'white'}}>Pokaż Mapę</a>
+          <button className={styles.contactButton} type="button" onClick={() => setIsMapOpen(true)}>
+            <FaLocationDot color="white" /> <a style={{ color: 'white' }}>Pokaż Mapę</a>
           </button>
         </article>
 

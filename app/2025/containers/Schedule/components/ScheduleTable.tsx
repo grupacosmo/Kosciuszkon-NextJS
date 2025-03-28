@@ -39,7 +39,7 @@ export function ScheduleTable({
             <ScheduleElement key={id} {...restProps} />
           ))}
         </div>
-        </article>
+      </article>
     </div>
   );
 }

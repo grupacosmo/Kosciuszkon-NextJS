@@ -14,25 +14,25 @@ import {
 
 export default function Home() {
   return (
-    <main className='main'>
+    <main className="main">
       <Header />
       <Hero />
-      <SectionDivider name='o wydarzeniu' />
+      <SectionDivider name="o wydarzeniu" />
       <Informations />
       <SectionGradient />
-      <SectionDivider name='zapisy' />
+      <SectionDivider name="zapisy" />
       <Enrolment />
       <SectionGradient />
-      <SectionDivider name='harmonogram' />
+      <SectionDivider name="harmonogram" />
       <Schedule />
       <SectionGradient />
-      <SectionDivider name='faq' />
-      <Questions/>
+      <SectionDivider name="faq" />
+      <Questions />
       <SectionGradient />
-      <SectionDivider name='social media' />
+      <SectionDivider name="social media" />
       <SocialMedia />
       <SectionGradient />
-      <SectionDivider name='partnerzy' />
+      <SectionDivider name="partnerzy" />
       <Partners />
       <Footer />
     </main>

@@ -8,4 +8,3 @@ export { Partners } from './Partners/Partners';
 export { Footer } from './Footer/Footer';
 export { SectionDivider } from './Divider/SectionDivider/SectionDivider';
 export { SectionGradient } from './Divider/SectionGradient/SectionGradient';
-

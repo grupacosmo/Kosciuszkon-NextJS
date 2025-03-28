@@ -27,11 +27,22 @@ export function Header(): ReactElement {
             <MenuItem key={link.id} onClick={closeMenu} {...link} />
           ))}
           <div className={styles.dropdown}>
-            <Link className={styles.link} href="">Historia Edycji</Link>
+            <Link className={styles.link} href="">
+              Historia Edycji
+            </Link>
             <div className={styles.dropdownContent}>
-                <Link className={styles.dropdownContentLink} href="/2023"> I Edycja - 2023</Link>
-                <Link className={styles.dropdownContentLink} href="/2024"> II Edycja - 2024 </Link>
-                <Link className={styles.dropdownContentLink} href="/"> III Edycja - 2025 </Link>
+              <Link className={styles.dropdownContentLink} href="/2023">
+                {' '}
+                I Edycja - 2023
+              </Link>
+              <Link className={styles.dropdownContentLink} href="/2024">
+                {' '}
+                II Edycja - 2024{' '}
+              </Link>
+              <Link className={styles.dropdownContentLink} href="/">
+                {' '}
+                III Edycja - 2025{' '}
+              </Link>
             </div>
           </div>
         </ul>
@@ -44,11 +55,10 @@ export function Header(): ReactElement {
             setIsMenuOpen((state) => !state);
           }}
         >
-
           {isMenuOpen ? (
-            <BiX aria-label='Menu' color="white" />
+            <BiX aria-label="Menu" color="white" />
           ) : (
-            <BiMenu aria-label='Menu' color="white" />
+            <BiMenu aria-label="Menu" color="white" />
           )}
         </button>
       </nav>
@@ -58,13 +68,13 @@ export function Header(): ReactElement {
           {localLinks.map((link) => (
             <MenuItem key={link.id} onClick={closeMenu} {...link} />
           ))}
-          <Link className={styles.link} href='/2023'>
+          <Link className={styles.link} href="/2023">
             I Edycja - 2023
           </Link>
-          <Link className={styles.link} href='/2024'>
+          <Link className={styles.link} href="/2024">
             II Edycja - 2024
           </Link>
-          <Link className={styles.link} href='/'>
+          <Link className={styles.link} href="/">
             III Edycja - 2025
           </Link>
         </ul>

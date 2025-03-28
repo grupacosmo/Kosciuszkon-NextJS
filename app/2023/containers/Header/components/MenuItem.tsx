@@ -9,11 +9,7 @@ type MenuItemProps = {
   onClick: () => void;
 };
 
-export function MenuItem({
-  href,
-  label,
-  onClick,
-}: MenuItemProps): ReactElement {
+export function MenuItem({ href, label, onClick }: MenuItemProps): ReactElement {
   return (
     <>
       <li>

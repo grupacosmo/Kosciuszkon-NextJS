@@ -17,32 +17,32 @@ export function Partners(): ReactElement {
     <section className={styles.container}>
       <PartnersGrid
         partnerArray={honoraryPartnerData}
-        categoryName='Patroni honorowi'
+        categoryName="Patroni honorowi"
         containerClassName={clsx(styles.grid, styles.honoraryPartnerGrid)}
       />
       <PartnersGrid
         partnerArray={goldPartnerData}
-        categoryName='Złoty partner'
+        categoryName="Złoty partner"
         containerClassName={clsx(styles.grid, styles.goldPartnerGrid)}
       />
       <PartnersGrid
         partnerArray={silverPartnerData}
-        categoryName='Srebrni partnerzy'
+        categoryName="Srebrni partnerzy"
         containerClassName={clsx(styles.grid, styles.silverPartnerGrid)}
       />
       <PartnersGrid
         partnerArray={eventPartnerData}
-        categoryName='Partnerzy wydarzenia'
+        categoryName="Partnerzy wydarzenia"
         containerClassName={clsx(styles.grid, styles.eventPartnerGrid)}
       />
       <PartnersGrid
         partnerArray={mediaPartnerDataOne}
-        categoryName='Patroni medialni'
+        categoryName="Patroni medialni"
         containerClassName={clsx(styles.grid, styles.mediaPartnerGridOne)}
       />
       <PartnersGrid
         partnerArray={mediaPartnerDataTwo}
-        categoryName=''
+        categoryName=""
         containerClassName={clsx(styles.grid, styles.mediaPartnerGridTwo)}
       />
     </section>

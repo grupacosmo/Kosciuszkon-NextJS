@@ -9,7 +9,7 @@ import hex from '../../../assets/svg/hex-timer.svg';
 import { calcEndTime, calcProps, calcStartTime } from './utils';
 
 import styles from './Countdown.module.scss';
-import {start} from "node:repl";
+import { start } from 'node:repl';
 
 const Timer = dynamic(() => import('@/app/utils/Timer/Timer'), { ssr: false });
 
@@ -19,11 +19,7 @@ type CountdownProps = {
   disabled?: boolean;
 };
 
-export function Countdown({
-  startDate,
-  endDate,
-  disabled = false,
-}: CountdownProps): ReactElement {
+export function Countdown({ startDate, endDate, disabled = false }: CountdownProps): ReactElement {
   const [startTime, setStartTime] = useState<number>(calcStartTime(startDate));
   const [endTime, setEndTime] = useState<number>(calcEndTime(endDate));
 
@@ -42,19 +38,20 @@ export function Countdown({
   const { time, header } = calcProps(startTime, endTime);
 
   return (
-    <article
-      className={clsx(styles.container, { [styles.disabled]: disabled })}
-    >
+    <article className={clsx(styles.container, { [styles.disabled]: disabled })}>
       <div className={styles.textWrapper}>
-      <h3>{header}</h3>
-      <h2>({new Date(startDate).toLocaleDateString()} {new Date(startDate).getHours()}:{new Date(startDate).getMinutes()})</h2>
+        <h3>{header}</h3>
+        <h2>
+          ({new Date(startDate).toLocaleDateString()} {new Date(startDate).getHours()}:
+          {new Date(startDate).getMinutes()})
+        </h2>
       </div>
       <div className={styles.countdown}>
         <Timer time={time} className={styles.timer} />
         <Image
           className={styles.timerBackground}
           src={hex}
-          alt='Czarny sześcian z zielonym obramowaniem.'
+          alt="Czarny sześcian z zielonym obramowaniem."
         />
       </div>
     </article>
