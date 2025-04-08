@@ -26,6 +26,14 @@ export const visitUsLinks = [
     alt: 'Koło Naukowe Visgraph.',
     src: '/p2025/visit/visgraph.png',
   },
+  {
+    id: '2025-visit-5',
+    href: 'https://www.facebook.com/cosmopk.kn',
+    alt: 'Koło Naukowe Cosmo PK.',
+    src: '/p2024/visit/cosmo.png',
+  },
+
+  
 ];
 
 export const externalLinks = [{}];

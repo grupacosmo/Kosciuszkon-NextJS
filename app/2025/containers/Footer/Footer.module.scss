@@ -85,6 +85,7 @@
     margin-right: $space-s;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 83px;
     align-items: center;
 
     @include maxWidth($bp-mobile) {
@@ -95,12 +96,27 @@
 
   &Item {
     padding-left: $space-xl;
+    height: 83px;
+    display: flex;
+    align-items: center;
 
     img {
       height: auto;
       width: auto;
       max-height: 70px;
       max-width: 180px;
+    }
+
+    &:last-child {
+      grid-column: 1 / -1;
+      justify-self: center;
+      padding: 0;
+
+      @include maxWidth($bp-mobile) {
+        grid-column: auto;
+        justify-self: auto;
+        padding-left: $space-xl;
+      }
     }
   }
 }
