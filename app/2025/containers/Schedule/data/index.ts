@@ -9,7 +9,7 @@ export const scheduleData = {
       },
       {
         id: '2025-schedule-2',
-        title: 'Oficjalne otwarcie wydarzenia, prezentacje firm i propozycji tematu',
+        title: 'Oficjalne otwarcie wydarzenia i ujawnienie tematu hackathonu',
         time: '11:30',
         description: '',
       },
