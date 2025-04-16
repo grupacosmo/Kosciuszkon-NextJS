@@ -25,7 +25,7 @@ export const mainPartnerData = [
   },
   {
     id: '2025-gold-sponsor-2',
-    img: '/p2025/partners/honorary/wiit.png',
+    img: '/p2025/partners/main/wiit.png',
     link: 'https://it.pk.edu.pl',
     partnerName: 'WIiT',
     customClass: 'wiit',
