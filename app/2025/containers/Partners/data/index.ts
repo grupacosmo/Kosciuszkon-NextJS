@@ -1,3 +1,13 @@
+export const mainSponsor = [
+  {
+    id: '2025-main-sponsor-1',
+    img: '/p2025/partners/main/wiit.png',
+    link: 'https://it.pk.edu.pl',
+    partnerName: 'WIiT',
+    customClass: 'wiit',
+  },
+];
+
 export const honoraryPartnersData = [
   {
     id: '2025-honorary-sponsor-2',
@@ -15,31 +25,24 @@ export const honoraryPartnersData = [
   },
 ];
 
-export const mainPartnerData = [
+export const majorPartnerData = [
   {
-    id: '2025-gold-sponsor-1',
-    img: '/p2025/partners/main/hitachi.png',
+    id: '2025-major-sponsor-1',
+    img: '/p2025/partners/major/hitachi.png',
     link: 'https://www.hitachienergy.com/se/sv',
     partnerName: 'Hitachi Energy',
     customClass: 'hitachi',
   },
   {
-    id: '2025-gold-sponsor-2',
-    img: '/p2025/partners/main/wiit.png',
-    link: 'https://it.pk.edu.pl',
-    partnerName: 'WIiT',
-    customClass: 'wiit',
-  },
-  {
-    id: '2025-gold-sponsor-3',
-    img: '/p2025/partners/main/sencity_white.png',
+    id: '2025-major-sponsor-2',
+    img: '/p2025/partners/major/sencity_white.png',
     link: 'https://sencity.city',
     partnerName: 'Sencity',
     customClass: 'sencity',
   },
   {
-    id: '2025-gold-sponsor-4',
-    img: '/p2025/partners/main/princity_white.png',
+    id: '2025-major-sponsor-3',
+    img: '/p2025/partners/major/princity_white.png',
     link: 'https://princity.com',
     partnerName: 'Princity',
     customClass: 'princity',

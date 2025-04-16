@@ -14,7 +14,27 @@
   text-align: center;
 }
 
-.mainPartnersGrid {
+.mainSponsor {
+  padding: $space-s 0 $space-s 0;
+  justify-content: center;
+
+  img {
+    width: 800px;
+    height: auto;
+
+    @include maxWidth($bp-desktop) {
+      width: 650px;
+      height: auto;
+    }
+
+    @include maxWidth($bp-mobile) {
+      width: 400px;
+      height: auto;
+    }
+  }
+}
+
+.majorPartnersGrid{
   padding: $space-s 0 $space-s 0;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
