@@ -41,10 +41,10 @@ export function Countdown({ startDate, endDate, disabled = false }: CountdownPro
     <article className={clsx(styles.container, { [styles.disabled]: disabled })}>
       <div className={styles.textWrapper}>
         <h3>{header}</h3>
-        <h2>
+        <h4>
           ({new Date(startDate).toLocaleDateString()} {new Date(startDate).getHours()}:
           {new Date(startDate).getMinutes()})
-        </h2>
+        </h4>
       </div>
       <div className={styles.countdown}>
         <Timer time={time} className={styles.timer} />

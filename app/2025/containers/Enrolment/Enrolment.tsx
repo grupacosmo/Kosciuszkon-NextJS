@@ -21,7 +21,7 @@ export function Enrolment(): ReactElement {
         <HexagonLink
           id="faq__form-label"
           label="Rejestracja"
-          arialLabel="faq__form-label"
+          arialLabel="Tu znajdziesz link do rejestracji uczestnika."
           href="https://forms.office.com/pages/responsepage.aspx?id=8qzyXLSsHU-Adm7aPxge7fhxeA78Pb5Aq0eAlucyCmpUNlU1WDNEQkpOM1gwSVpSRUtKSE9TT1pIMy4u&route=shorturl"
           alt="Czarny sześciokąt z zielonym obramowaniem i ikoną formularza."
           Icon={FaWpforms}
@@ -29,7 +29,7 @@ export function Enrolment(): ReactElement {
         <HexagonLink
           id="faq__form-label"
           label="Regulamin"
-          arialLabel="faq__form-label"
+          arialLabel="Tu znajdziesz link do regulaminu Kościuszkonu."
           href="https://mckpk-my.sharepoint.com/:w:/g/personal/s_kosciuszkon_samorzad_pk_edu_pl/EQ9kM2q0gxJAl_ruJXlgCl8BDw4ZoBsNjcJ7-QMiZboU3g?e=eaWVTw"
           alt="Czarny sześciokąt z zielonym obramowaniem i ikoną wagi."
           Icon={VscLaw}

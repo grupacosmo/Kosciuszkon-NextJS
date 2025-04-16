@@ -4,7 +4,7 @@ import { PartnersGrid } from './components/PartnersGrid';
 import styles from './Partners.module.scss';
 import './Partners.scss';
 
-import { honoraryPartnersData, eventPartnersData, mainPartnerData } from './data';
+import { honoraryPartnersData, eventPartnersData, mainPartnerData, mediaPartnersData } from './data';
 
 export function Partners(): ReactElement {
   return (
@@ -19,6 +19,12 @@ export function Partners(): ReactElement {
         partnerArray={eventPartnersData}
         categoryName="Partnerzy wydarzenia"
         containerClassName={clsx(styles.grid, styles.eventPartnersGrid)}
+      />
+
+      <PartnersGrid
+         partnerArray={mediaPartnersData}
+         categoryName="Partnerzy medialni"
+         containerClassName={clsx(styles.grid, styles.mediaPartnersGrid)}
       />
 
       <PartnersGrid

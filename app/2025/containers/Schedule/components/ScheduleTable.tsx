@@ -26,19 +26,19 @@ export function ScheduleTable({
     <div className={styles.container}>
       <article>
         <h3>{firstTitle}</h3>
-        <div>
+        <ul>
           {firstArray.map(({ id, ...restProps }) => (
             <ScheduleElement key={id} {...restProps} />
           ))}
-        </div>
+        </ul>
       </article>
       <article>
         <h3>{secondTitle}</h3>
-        <div>
+        <ul>
           {secondArray.map(({ id, ...restProps }) => (
             <ScheduleElement key={id} {...restProps} />
           ))}
-        </div>
+        </ul>
       </article>
     </div>
   );

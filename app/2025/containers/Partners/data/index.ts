@@ -56,27 +56,20 @@ export const eventPartnersData = [
   },
   {
     id: '2025-event-partner-2',
-    img: '/p2025/partners/standard/kms.png',
-    link: 'https://kms.org.pl',
-    partnerName: 'KMS',
-    customClass: 'kms',
-  },
-  {
-    id: '2025-event-partner-3',
     img: '/p2025/partners/standard/trawell.png',
     link: 'https://trawell.pl',
     partnerName: 'Trawell',
     customClass: 'trawell',
   },
   {
-    id: '2025-event-partner-4',
+    id: '2025-event-partner-3',
     img: '/p2025/partners/standard/N-iX_orange_white.png',
     link: 'https://www.n-ix.com',
     partnerName: 'N-ix',
     customClass: 'n-ix',
   },
   {
-    id: '2025-event-partner-5',
+    id: '2025-event-partner-4',
     img: '/p2025/partners/standard/EPAM_LOGO_White.png',
     link: 'https://www.epam.com',
     partnerName: 'EPAM',
@@ -85,25 +78,32 @@ export const eventPartnersData = [
 ];
 
 export const mediaPartnersData = [
-  // {
-  //   id: '2025-media-partner-1',
-  //   img: '/p2025/partners/media/4programmers-green.png',
-  //   link: 'https://4programmers.net/',
-  //   partnerName: '4programmers',
-  //   customClass: 'programmers',
-  // },
-  // {
-  //   id: '2025-media-partner-2',
-  //   img: '/p2025/partners/media/podprad.png',
-  //   link: 'https://podprad.pl/',
-  //   partnerName: 'Pod prąd',
-  //   customClass: 'podprad',
-  // },
-  // {
-  //   id: '2025-media-partner-3',
-  //   img: '/p2025/partners/media/dlastudentapl.png',
-  //   link: 'https://www.dlastudenta.pl/',
-  //   partnerName: 'Dla studenta',
-  //   customClass: 'dlastudentapl',
-  // },
+  {
+    id: '2025-media-partner-1',
+    img: '/p2025/partners/media/grupa_student_news.png',
+    link: 'https://www.studentnews.pl ',
+    partnerName: 'Grupa Student News',
+    customClass: 'student_news',
+  },
+  {
+    id: '2025-media-partner-2',
+    img: '/p2025/partners/media/kms.png',
+    link: 'https://kms.org.pl',
+    partnerName: 'KMS',
+    customClass: 'kms',
+  },
+  {
+    id: '2025-media-partner-3',
+    img: '/p2025/partners/media/wrs_ms_polsla.png',
+    link: 'https://www.instagram.com/samorzad_rms_polsl/',
+    partnerName: 'Rada Samorządu Wydziału Matematyki Stosowanej - Politechnika Śląska',
+    customClass: 'wrs_polsla',
+  },
+  {
+    id: '2025-media-partner-4',
+    img: '/p2025/partners/media/radio_nowinki.jpg',
+    link: 'http://www.nowinki.pk.edu.pl',
+    partnerName: 'Internetowe Akademickie Radio Nowinki',
+    customClass: 'radio_nowinki',
+  },
 ];

@@ -1,11 +1,61 @@
 @import '@/styles/2025/variables.scss';
 
 .sencity {
-  position: relative;
   img {
     width: 120px;
-    height: 400px;
+    height: auto;
   }
+}
+
+.vention {
+    img {
+      width: 232px;
+      height: auto;
+
+      @include maxWidth($bp-mobile) {
+        width: 132px;
+        height: auto;
+      }
+    }
+}
+
+
+.trawell {
+    img {
+      width: 262px;
+      height: auto;
+
+      @include maxWidth($bp-mobile) {
+        width: 162px;
+        height: auto;
+      }
+    }
+}
+
+.wrs_polsla {
+    img {
+      width: 210px;
+      height: auto;
+
+
+      @include maxWidth($bp-mobile) {
+        width: 160px;
+        height: auto;
+      }
+    }
+}
+
+.epam {
+    img {
+      width: 284px;
+      height: auto;
+      filter: contrast(80%);
+
+      @include maxWidth($bp-mobile) {
+        width: 182px;
+        height: auto;
+      }
+    }
 }
 
 .malopolska {

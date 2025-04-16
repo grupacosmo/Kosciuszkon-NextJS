@@ -8,9 +8,9 @@ type ScheduleElementProps = {
 
 export function ScheduleElement({ title, time }: ScheduleElementProps): ReactElement {
   return (
-    <div className={styles.element}>
-      <div>{title}</div>
-      <div>{time}</div>
-    </div>
+    <li className={styles.element}>
+      <p>{title}</p>
+      <p>{time}</p>
+    </li>
   );
 }

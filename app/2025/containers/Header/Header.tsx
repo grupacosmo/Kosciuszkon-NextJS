@@ -56,9 +56,9 @@ export function Header(): ReactElement {
           }}
         >
           {isMenuOpen ? (
-            <BiX aria-label="Menu" color="white" />
+            <BiX aria-label="Zamknij menu" color="white" />
           ) : (
-            <BiMenu aria-label="Menu" color="white" />
+            <BiMenu aria-label="Otwórz menu" color="white" />
           )}
         </button>
       </nav>

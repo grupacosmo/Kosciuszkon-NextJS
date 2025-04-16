@@ -9,7 +9,6 @@
     "next:lint": "next lint",
     "lint": "npx prettier . --check",
     "lint:stage": "npx prettier . --write"
-    
   },
   "dependencies": {
     "@types/node": "22.13.11",

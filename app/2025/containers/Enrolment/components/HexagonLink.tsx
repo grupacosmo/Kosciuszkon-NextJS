@@ -51,7 +51,7 @@ export function HexagonLink({
       <a
         className={styles.link}
         href={href}
-        aria-labelledby={arialLabel}
+        aria-label={arialLabel}
         target="_blank"
         rel="noreferrer"
       >
