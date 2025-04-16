@@ -4,7 +4,14 @@
   img {
     width: 120px;
     height: auto;
+
+    @include maxWidth($bp-mobile) {
+      width: 50px;
+      height: auto;
+    }
   }
+
+
 }
 
 .vention {
@@ -58,40 +65,3 @@
     }
 }
 
-.malopolska {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 380px;
-    display: block;
-    content: 'Marszałek  Województwa  Małopolskiego';
-    font-size: $header-xs;
-    color: $color-white;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-
-    @include maxWidth($bp-mobile) {
-      width: 312px;
-      font-size: 12px;
-    }
-  }
-
-  img {
-    width: 572px;
-    height: auto;
-
-    @include maxWidth($bp-desktop) {
-      width: 524px;
-      height: auto;
-    }
-
-    @include maxWidth($bp-mobile) {
-      width: 312px;
-      height: auto;
-    }
-  }
-}

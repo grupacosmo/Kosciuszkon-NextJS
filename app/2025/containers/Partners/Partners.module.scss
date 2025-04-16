@@ -28,6 +28,9 @@
     grid-template-columns: 1fr;
   }
 
+
+
+
   img {
     width: 429px;
     height: auto;
@@ -80,7 +83,7 @@
 
 .honoraryPartnersGrid {
   padding: $space-xl 0 $space-xl;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   @include maxWidth($bp-desktop) {
     grid-template-columns: 1fr;

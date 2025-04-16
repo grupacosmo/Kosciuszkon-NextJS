@@ -1,12 +1,5 @@
 export const honoraryPartnersData = [
   {
-    id: '2025-honorary-sponsor-3',
-    img: '/p2025/partners/honorary/wiit.png',
-    link: 'https://it.pk.edu.pl',
-    partnerName: 'WIiT',
-    customClass: 'wiit',
-  },
-  {
     id: '2025-honorary-sponsor-2',
     img: '/p2025/partners/honorary/pk.png',
     link: 'https://pk.edu.pl/',
@@ -32,10 +25,10 @@ export const mainPartnerData = [
   },
   {
     id: '2025-gold-sponsor-2',
-    img: '/p2025/partners/main/princity_white.png',
-    link: 'https://princity.com',
-    partnerName: 'Princity',
-    customClass: 'princity',
+    img: '/p2025/partners/honorary/wiit.png',
+    link: 'https://it.pk.edu.pl',
+    partnerName: 'WIiT',
+    customClass: 'wiit',
   },
   {
     id: '2025-gold-sponsor-3',
@@ -44,6 +37,15 @@ export const mainPartnerData = [
     partnerName: 'Sencity',
     customClass: 'sencity',
   },
+  {
+    id: '2025-gold-sponsor-4',
+    img: '/p2025/partners/main/princity_white.png',
+    link: 'https://princity.com',
+    partnerName: 'Princity',
+    customClass: 'princity',
+  },
+
+
 ];
 
 export const eventPartnersData = [
@@ -105,5 +107,19 @@ export const mediaPartnersData = [
     link: 'http://www.nowinki.pk.edu.pl',
     partnerName: 'Internetowe Akademickie Radio Nowinki',
     customClass: 'radio_nowinki',
+  },
+  {
+    id: '2025-media-partner-5',
+    img: '/p2025/partners/media/ujot_fm.png',
+    link: 'https://ujot.fm',
+    partnerName: 'Radio UjotFM',
+    customClass: 'ujot_fm',
+  },
+  {
+    id: '2025-media-partner-6',
+    img: '/p2025/partners/media/kanal_studencki.png',
+    link: 'https://kanalstudencki.pl',
+    partnerName: 'Kanał Studencki - Miejsce twojego rozwoju',
+    customClass: 'kanal_studencki',
   },
 ];
