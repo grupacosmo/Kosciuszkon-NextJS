@@ -107,17 +107,6 @@
       max-width: 180px;
     }
 
-    &:last-child {
-      grid-column: 1 / -1;
-      justify-self: center;
-      padding: 0;
-
-      @include maxWidth($bp-mobile) {
-        grid-column: auto;
-        justify-self: auto;
-        padding-left: $space-xl;
-      }
-    }
   }
 }
 
@@ -195,7 +184,7 @@
   &Container {
     padding-left: $space-h;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: start;
 
     @include maxWidth($bp-desktop) {

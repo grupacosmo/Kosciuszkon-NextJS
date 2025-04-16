@@ -44,8 +44,6 @@ export const mainPartnerData = [
     partnerName: 'Princity',
     customClass: 'princity',
   },
-
-
 ];
 
 export const eventPartnersData = [

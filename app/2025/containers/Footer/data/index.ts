@@ -1,7 +1,13 @@
-import { FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope, FaGlobe } from 'react-icons/fa';
 import { BsDiscord } from 'react-icons/bs';
 
 export const visitUsLinks = [
+  {
+    id: '2025-visit-0',
+    href: 'https://it.pk.edu.pl',
+    alt: 'Wydział Informatyki i Telekomunikacji Politechniki Krakowskiej',
+    src: '/p2025/visit/wiit.png',
+  },
   {
     id: '2025-visit-1',
     href: 'https://samorzad.pk.edu.pl',
@@ -27,13 +33,11 @@ export const visitUsLinks = [
     src: '/p2025/visit/visgraph.png',
   },
   {
-    id: '2025-visit-5',
+    id: '2025-visit-6',
     href: 'https://www.facebook.com/cosmopk.kn',
     alt: 'Koło Naukowe Cosmo PK.',
     src: '/p2024/visit/cosmo.png',
   },
-
-  
 ];
 
 export const externalLinks = [{}];
@@ -41,42 +45,48 @@ export const externalLinks = [{}];
 export const externalLinksWithIcons = [
   {
     id: '2025-external-1',
+    href: 'https://it.pk.edu.pl',
+    label: 'Wydział Informatyki i Telekomunikacji',
+    Icon: FaGlobe,
+  },
+  {
+    id: '2025-external-2',
     href: 'https://www.facebook.com/samorzad.wiitpk',
     label: 'WRSS WIiT',
     Icon: FaFacebookF,
   },
   {
-    id: '2025-external-2',
+    id: '2025-external-3',
     href: 'https://www.facebook.com/wrsswieik',
     label: 'WRSS WIEiK',
     Icon: FaFacebookF,
   },
   {
-    id: '2025-external-3',
+    id: '2025-external-4',
     href: 'https://www.facebook.com/visgraph',
     label: 'Visgraph',
     Icon: FaFacebookF,
   },
   {
-    id: '2025-external-4',
+    id: '2025-external-5',
     href: 'https://www.facebook.com/cosmopk.kn',
     label: 'Cosmo PK',
     Icon: FaFacebookF,
   },
   {
-    id: '2025-external-5',
+    id: '2025-external-6',
     href: 'https://www.instagram.com/wrss_wiit_pk/',
     label: 'WRSS WIiT',
     Icon: FaInstagram,
   },
   {
-    id: '2025-external-6',
+    id: '2025-external-7',
     href: 'https://www.instagram.com/vis.graph/',
     label: 'Visgraph',
     Icon: FaInstagram,
   },
   {
-    id: '2025-external-7',
+    id: '2025-external-8',
     href: 'https://www.instagram.com/cosmopk_kn/',
     label: 'Cosmo PK',
     Icon: FaInstagram,
