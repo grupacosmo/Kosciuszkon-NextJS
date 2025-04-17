@@ -8,23 +8,6 @@ export const mainSponsor = [
   },
 ];
 
-export const honoraryPartnersData = [
-  {
-    id: '2025-honorary-sponsor-2',
-    img: '/p2025/partners/honorary/pk.png',
-    link: 'https://pk.edu.pl/',
-    partnerName: 'Politechnika Krakowska',
-    customClass: 'pk',
-  },
-  {
-    id: '2025-honorary-sponsor-1',
-    img: '/p2025/partners/honorary/wieik.png',
-    link: 'https://wieik.pk.edu.pl',
-    partnerName: 'WIEiK',
-    customClass: 'wieik',
-  },
-];
-
 export const majorPartnerData = [
   {
     id: '2025-major-sponsor-1',
