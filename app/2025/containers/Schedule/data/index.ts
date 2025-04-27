@@ -1,6 +1,6 @@
 export const scheduleData = {
   hackathon: {
-    sunday: [
+    saturday: [
       {
         id: '2025-schedule-1',
         title: 'Rejestracja uczestników turnieju',
@@ -9,38 +9,38 @@ export const scheduleData = {
       },
       {
         id: '2025-schedule-2',
+        title: 'Quiz',
+        time: '10:30',
+        description: '',
+      },
+      {
+        id: '2025-schedule-3',
         title: 'Oficjalne otwarcie wydarzenia i ujawnienie tematu hackathonu',
         time: '11:30',
         description: '',
       },
       {
-        id: '2025-schedule-3',
+        id: '2025-schedule-4',
         title: 'Rozpoczęcie kodowania',
         time: '13:00',
         description: '',
       },
       {
-        id: '2025-schedule-4',
+        id: '2025-schedule-5',
         title: 'Prelekcje',
         time: '14:00',
         description: '',
       },
       {
-        id: '2025-schedule-5',
+        id: '2025-schedule-6',
         title: 'Ciepły posiłek',
         time: '15:00',
         description: '',
       },
       {
-        id: '2025-schedule-6',
+        id: '2025-schedule-7',
         title: 'Sesja mentoringowa',
         time: '15:30 - 18:30',
-        description: '',
-      },
-      {
-        id: '2025-schedule-7',
-        title: 'Quiz',
-        time: '19:00',
         description: '',
       },
       {
@@ -50,7 +50,7 @@ export const scheduleData = {
         description: '',
       },
     ],
-    monday: [
+    sunday: [
       {
         id: '2025-schedule-9',
         title: 'Śniadanie',
