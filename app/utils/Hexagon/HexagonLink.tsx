@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { type IconType } from 'react-icons';
 import clsx from 'clsx';
 
-import hex from '../../../assets/svg/hex-64.svg';
+import hex from '@/app/utils/Hexagon/assets/svg/hex-64.svg';
 
 import styles from './HexagonLink.module.scss';
 

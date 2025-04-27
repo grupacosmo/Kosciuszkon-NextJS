@@ -1,6 +1,6 @@
 import { type ReactElement } from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa';
-import { HexagonLink } from './components/HexagonLink';
+import { HexagonLink } from '@/app/utils/Hexagon/HexagonLink';
 
 import styles from './SocialMedia.module.scss';
 

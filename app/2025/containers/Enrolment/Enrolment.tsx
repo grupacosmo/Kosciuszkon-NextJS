@@ -1,7 +1,7 @@
 import { type ReactElement } from 'react';
 import { FaWpforms } from 'react-icons/fa';
 import { VscLaw } from 'react-icons/vsc';
-import { HexagonLink } from './components/HexagonLink';
+import { HexagonLink } from '@/app/utils/Hexagon/HexagonLink';
 import { Countdown } from './components/Countdown';
 import { calcEndTime } from './components/utils';
 

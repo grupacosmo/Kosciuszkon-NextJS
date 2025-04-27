@@ -3,7 +3,7 @@ import { FaWpforms, FaFacebookF } from 'react-icons/fa';
 
 import { Collapsible } from '@/app/utils';
 
-import { HexagonLink } from './components/HexagonLink';
+import { HexagonLink } from '@/app/utils/Hexagon/HexagonLink';
 import { Countdown } from './components/Countdown';
 import { questionsData } from './data';
 import { calcEndTime } from './components/utils';
