@@ -42,8 +42,13 @@ export function Countdown({ startDate, endDate, disabled = false }: CountdownPro
       <div className={styles.textWrapper}>
         <h3>{header}</h3>
         <h4>
-          ({new Date(startDate).toLocaleDateString()} {new Date(startDate).getHours()}:
-          {new Date(startDate).getMinutes()})
+          ( {new Intl.DateTimeFormat('en-US', {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit'
+        }).format(new Date(startDate))})
         </h4>
       </div>
       <div className={styles.countdown}>
