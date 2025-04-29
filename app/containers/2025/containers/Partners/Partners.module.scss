@@ -1,0 +1,128 @@
+@import '@/styles/2025/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+  margin: $space-h $space-s;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.mainSponsor {
+  padding: $space-s 0 $space-s 0;
+  justify-content: center;
+
+  img {
+    width: 800px;
+    height: auto;
+
+    @include maxWidth($bp-desktop) {
+      width: 650px;
+      height: auto;
+    }
+
+    @include maxWidth($bp-mobile) {
+      width: 400px;
+      height: auto;
+    }
+  }
+}
+
+.majorPartnersGrid{
+  padding: $space-s 0 $space-s 0;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @include maxWidth($bp-desktop) {
+    grid-template-columns: 1fr;
+    row-gap: $space-h;
+  }
+
+  @include maxWidth($bp-mobile) {
+    grid-template-columns: 1fr;
+  }
+
+
+
+
+  img {
+    width: 429px;
+    height: auto;
+
+    @include maxWidth($bp-desktop) {
+      grid-template-columns: 1fr 1fr;
+      width: 354px;
+      height: auto;
+    }
+
+    @include maxWidth($bp-mobile) {
+      width: 204px;
+      height: auto;
+    }
+  }
+}
+
+.eventPartnersGrid, .mediaPartnersGrid {
+  padding: $space-xl 0 0 0;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  & > div {
+    padding: $space-xl;
+  }
+
+  @include maxWidth($bp-desktop) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: $space-xs;
+  }
+
+  @include maxWidth($bp-mobile) {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    width:262px;
+    height:auto;
+
+    @include maxWidth($bp-desktop) {
+      width: 230px;
+      height: auto;
+    }
+
+    @include maxWidth($bp-mobile) {
+      width: 182px;
+      height: auto;
+    }
+  }
+}
+
+.honoraryPartnersGrid {
+  padding: $space-xl 0 $space-xl;
+  grid-template-columns: 1fr 1fr;
+
+  @include maxWidth($bp-desktop) {
+    grid-template-columns: 1fr;
+    row-gap: $space-h;
+  }
+
+  img {
+    width: 429px;
+    height: auto;
+
+    @include maxWidth($bp-desktop) {
+      width: 354px;
+      height: auto;
+    }
+
+    @include maxWidth($bp-mobile) {
+      width: 262px;
+      height: auto;
+    }
+  }
+}
+

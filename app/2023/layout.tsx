@@ -1,4 +1,4 @@
-import '@/styles/2023/main.scss';
+import '@/styles/2024/main.scss';
 
 export const metadata = {
   metadataBase: new URL('https://kosciuszkon.pk.edu.pl/2023'),
@@ -27,5 +27,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return    (
+      <html lang="pl">
+      <body>{children}</body>
+      </html>
+  )
 }

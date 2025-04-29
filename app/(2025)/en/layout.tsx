@@ -1,10 +1,10 @@
-import '@/styles/2024/main.scss';
+import '@/styles/2025/main.scss';
 
 export const metadata = {
-  metadataBase: new URL('https://kosciuszkon.pk.edu.pl/2024'),
-  title: 'Kościuszkon - II Edycja 2024',
-  description: `Druga edycja hackathonu organizowanego przez Wydział
-  Informatyki i Telekomunikacji Politechniki Krakowskiej. Wydarzenie odbędzie się 8 czerwca 2024 roku o godzinie 12:00 w klubie Kwadrat.
+  metadataBase: new URL('https://kosciuszkon.pk.edu.pl/en'),
+  title: 'Kościuszkon - III Edycja 2025',
+  description: `Trzecia edycja hackathonu organizowanego przez Wydział
+  Informatyki i Telekomunikacji Politechniki Krakowskiej. Wydarzenie odbędzie się 31 maja 2025 roku o godzinie 11 w klubie Kwadrat.
   Na uczestników czekają 24 godziny pracy nad ciekawym wyzwaniem, dobra zabawa oraz wspaniałe nagrody.`,
   robots: {
     nosnippet: true,
@@ -26,9 +26,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return    (
-      <html lang="pl">
+  return (
+    <html lang="en">
       <body>{children}</body>
-      </html>
-  )
+    </html>
+  );
 }

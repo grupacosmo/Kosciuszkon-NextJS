@@ -1,4 +1,4 @@
-@import '@/styles/2024/variables.scss';
+@import '@/styles/2025/variables';
 
 .section {
   height: 100vh;
@@ -11,14 +11,14 @@
   position: absolute;
   top: 20%;
   left: 0;
-  width: 500px;
-  height: 250px;
+  width: 550px;
+  height: 240px;
   box-sizing: border-box;
   border-left: none;
   color: $color-white;
 
   @include maxWidth($bp-mobile) {
-    width: 300px;
+    width: 80%;
   }
 
   &Background {
@@ -50,6 +50,7 @@
 
   p {
     z-index: 3;
+    text-align: justify;
     position: relative;
     margin: 0 $space-l;
     color: $color-white;

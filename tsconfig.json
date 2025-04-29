@@ -20,15 +20,14 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
     }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "app/2023/containers/MapDialog/MapDialog.jsx"
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

@@ -1,4 +1,4 @@
-@import '@/styles/2024/variables.scss';
+@import '@/styles/2025/variables';
 
 .divider {
   z-index: 0;
@@ -25,11 +25,9 @@
   &Inner {
     width: 0px;
     height: 50px;
-    margin: auto;
-    margin-top: auto;
     background-color: $color-black;
     padding-top: 30px;
-    margin-top: -30px;
+    margin: -30px auto auto;
     position: relative;
     box-sizing: border-box;
 

@@ -1,0 +1,15 @@
+@import '@/styles/2025/variables';
+
+.link {
+  font-size: $font-l;
+  color: $color-white;
+
+  &:hover {
+    transition: 0.3s;
+    color: $color-main;
+  }
+
+  @include maxWidth($bp-tablet) {
+    font-size: $header-s;
+  }
+}
