@@ -66,6 +66,13 @@ export const partnersData = {
             partnerName: 'EPAM',
             customClass: 'epam',
         },
+        {
+            id: '2025-event-partner-5',
+            img: '/p2025/partners/standard/krakow_convention_bureau.png',
+            link: 'https://convention.krakow.pl/english',
+            partnerName: 'KCB',
+            customClass: 'kcb',
+        },
     ],
     mediaPartnersData: [
         {
