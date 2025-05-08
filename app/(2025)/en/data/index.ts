@@ -35,6 +35,7 @@ export const enrollment = {
             href: 'https://forms.office.com/pages/responsepage.aspx?id=8qzyXLSsHU-Adm7aPxge7fhxeA78Pb5Aq0eAlucyCmpUNlU1WDNEQkpOM1gwSVpSRUtKSE9TT1pIMy4u&route=shorturl',
             alt: 'A black hexagon with a green border and a form icon.',
             Icon: FaWpforms,
+            disabled: true,
         },
         {
             label: 'Regulations',
@@ -42,6 +43,7 @@ export const enrollment = {
             href: 'https://mckpk-my.sharepoint.com/:w:/g/personal/s_kosciuszkon_samorzad_pk_edu_pl/EYSFQ96h0ZFHrkUxSSNV9NUBvjPSZPMv0R9ZwrxfuHmBog?e=ghRocl',
             alt: 'A black hexagon with a green border and a scale icon.',
             Icon: VscLaw,
+            disabled: false,
         },
     ],
 };

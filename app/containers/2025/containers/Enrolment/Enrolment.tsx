@@ -15,6 +15,7 @@ type EnrollmentLink = {
     href: string;
     alt: string;
     Icon: IconType;
+    disabled?: boolean;
 }
 
 type Enrollment = {
@@ -38,6 +39,7 @@ export function Enrolment({ data }: { data: Enrollment }): ReactElement {
                         href={link.href}
                         alt={link.alt}
                         Icon={link.Icon}
+                        disabled={link.disabled}
                     />
                 ))}
             </article>
