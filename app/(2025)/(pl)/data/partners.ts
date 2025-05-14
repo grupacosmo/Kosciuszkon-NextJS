@@ -73,6 +73,13 @@ export const partnersData = {
             partnerName: 'KCB',
             customClass: 'kcb',
         },
+        {
+            id: '2025-event-partner-6',
+            img: '/p2025/partners/standard/ibm.png',
+            link: 'https://www.ibm.com/uk-en',
+            partnerName: 'IBM',
+            customClass: 'ibm',
+        },
     ],
     mediaPartnersData: [
         {
