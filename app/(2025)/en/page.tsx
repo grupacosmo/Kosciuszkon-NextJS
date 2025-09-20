@@ -17,6 +17,8 @@ import {scheduleData} from "@/app/(2025)/en/data/schedule";
 import {questionsData} from "@/app/(2025)/en/data/questions";
 import {partnersData} from "@/app/(2025)/en/data/partners";
 import {sliderContent} from "@/app/(2025)/en/data/informations/informations";
+import {photosContent} from "@/app/(2025)/en/data/photosContent";
+import {PhotoSlider} from "@/app/containers/2025/containers/PhotoSlider/PhotoSlider";
 
 export default function Home() {
   return (
@@ -35,8 +37,11 @@ export default function Home() {
       <SectionDivider name="FAQ" />
       <Questions questionsData={questionsData} />
       <SectionGradient />
-      <SectionDivider name="social media" />
+      <SectionDivider name="Social Media" />
       <SocialMedia />
+      <SectionGradient />
+      <SectionDivider name="Photos" />
+      <PhotoSlider content={photosContent}/>
       <SectionGradient />
       <SectionDivider name="Sponsors" />
       <Partners {...partnersData} />

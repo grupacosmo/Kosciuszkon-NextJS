@@ -7,6 +7,7 @@ export const header = {
         { id: '2', label: 'Zapisy', href: '#zapisy' },
         { id: '4', label: 'Harmonogram', href: '#harmonogram' },
         { id: '5', label: 'FAQ', href: '#faq' },
+        { id: '6', label: 'Zdjęcia', href: '#zdjęcia' },
         { id: '8', label: 'Kontakt', href: '#kontakt' },
     ],
     historyLinks: [
