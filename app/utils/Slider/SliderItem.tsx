@@ -1,6 +1,7 @@
 import { type ReactElement } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './SliderItem.module.scss';
+import clsx from 'clsx';
 
 const MOTION_CONFIG = {
   initial: { opacity: 0 },
@@ -11,6 +12,7 @@ const MOTION_CONFIG = {
 type SlideImage = {
   src: string;
   alt: string;
+  imageClass?: string; // New property for custom image-specific CSS class
 };
 
 export type SlideData = {
@@ -40,9 +42,12 @@ export function SingleSlide({
         <AnimatePresence>
           <motion.article {...MOTION_CONFIG} className={styles.slide}>
             {image && (
-              <picture className={styles.slidePicture}>
+              <picture className={clsx(styles.slidePicture)}>
                 <img
-                  className={styles.slideImg}
+                  className={clsx(
+                    styles.slideImg,
+                    image.imageClass // Add custom image-specific class
+                  )}
                   src={image.src}
                   alt={image.alt}
                 />

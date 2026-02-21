@@ -3,7 +3,7 @@ import { FaWpforms, FaFacebookF } from 'react-icons/fa';
 
 import { Collapsible } from '@/app/utils';
 
-import { HexagonLink } from './components/HexagonLink';
+import { HexagonLink } from '@/app/utils/Hexagon/HexagonLink';
 import { Countdown } from './components/Countdown';
 import { questionsData } from './data';
 import { calcEndTime } from './components/utils';
@@ -17,28 +17,24 @@ export function Questions(): ReactElement {
   const disableCountdown = calcEndTime(END_DATE) < 0;
 
   return (
-    <section key='2023' className={styles.section}>
-      <Countdown
-        startDate={START_DATE}
-        endDate={END_DATE}
-        disabled={disableCountdown}
-      />
+    <section key="2023" className={styles.section}>
+      <Countdown startDate={START_DATE} endDate={END_DATE} disabled={disableCountdown} />
 
       <article className={styles.linksContainer}>
         <HexagonLink
-          id='faq__form-label'
-          label='Formularz rejestracyjny'
-          arialLabel='faq__form-label'
-          href='https://forms.office.com/r/9AH7VzkWa4'
-          alt='Czarny sześciokąt z zielonym obramowaniem i ikoną formularza.'
+          id="faq__form-label"
+          label="Formularz rejestracyjny"
+          arialLabel="faq__form-label"
+          href="https://forms.office.com/r/9AH7VzkWa4"
+          alt="Czarny sześciokąt z zielonym obramowaniem i ikoną formularza."
           Icon={FaWpforms}
           disabled
         />
         <HexagonLink
-          id='faq__fb-evennt-label'
-          label='Wydarzenie na Facebooku'
-          arialLabel='faq__fb-evennt-label'
-          href='https://www.facebook.com/events/545483540957513/'
+          id="faq__fb-evennt-label"
+          label="Wydarzenie na Facebooku"
+          arialLabel="faq__fb-evennt-label"
+          href="https://www.facebook.com/events/545483540957513/"
           alt="Czarny sześciokąt z zielonym obramowaniem i ikoną Facebooka'a."
           Icon={FaFacebookF}
         />
@@ -46,11 +42,7 @@ export function Questions(): ReactElement {
 
       <article className={styles.faqContainer}>
         {questionsData.map(({ id, title, text }) => (
-          <Collapsible
-            key={id}
-            label={title}
-            buttonClassName={styles.faqCollapsibleButton}
-          >
+          <Collapsible key={id} label={title} buttonClassName={styles.faqCollapsibleButton}>
             <p>{text}</p>
           </Collapsible>
         ))}

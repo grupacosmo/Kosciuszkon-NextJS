@@ -6,10 +6,7 @@ type ScheduleElementProps = {
   time: string;
 };
 
-export function ScheduleElement({
-  title,
-  time,
-}: ScheduleElementProps): ReactElement {
+export function ScheduleElement({ title, time }: ScheduleElementProps): ReactElement {
   return (
     <div className={styles.element}>
       <div>{title}</div>

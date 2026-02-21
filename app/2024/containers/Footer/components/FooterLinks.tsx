@@ -42,7 +42,7 @@ export function FooterLinks({
       {baseLinks &&
         baseLinks.map(({ id, href, label }) => (
           <li key={id} className={className}>
-            <a href={href} target='_blank' rel='noreferrer'>
+            <a href={href} target="_blank" rel="noreferrer">
               {label}
             </a>
           </li>
@@ -51,7 +51,7 @@ export function FooterLinks({
       {iconLinks &&
         iconLinks.map(({ id, href, label, Icon }) => (
           <li key={id} className={className}>
-            <a href={href} target='_blank' rel='noreferrer'>
+            <a href={href} target="_blank" rel="noreferrer">
               <Icon />
               {label}
             </a>
@@ -60,7 +60,7 @@ export function FooterLinks({
       {imageLinks &&
         imageLinks.map(({ id, href, alt, src }) => (
           <li key={id} className={className}>
-            <a key={id} href={href} target='_blank' rel='noreferrer'>
+            <a key={id} href={href} target="_blank" rel="noreferrer">
               <img src={src} alt={alt} />
             </a>
           </li>

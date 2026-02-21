@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, type ReactElement, useEffect } from 'react';
+import { useState, type ReactElement } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
 import { BiMenu, BiX } from 'react-icons/bi';
 import { MenuItem } from './components/MenuItem';
 import { localLinks } from './data';
 import styles from './Header.module.scss';
+import style from './components/MenuItem.module.scss';
 
 export function Header(): ReactElement {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,9 +27,25 @@ export function Header(): ReactElement {
           {localLinks.map((link) => (
             <MenuItem key={link.id} onClick={closeMenu} {...link} />
           ))}
-          <Link className={styles.link} href='/2023'>
-            I Edycja
-          </Link>
+          <div className={styles.dropdown}>
+            <Link className={styles.link} href="">
+              Historia Edycji
+            </Link>
+            <div className={styles.dropdownContent}>
+              <Link className={styles.dropdownContentLink} href="/2023">
+                {' '}
+                I Edycja - 2023
+              </Link>
+              <Link className={styles.dropdownContentLink} href="/2024">
+                {' '}
+                II Edycja - 2024{' '}
+              </Link>
+              <Link className={styles.dropdownContentLink} href="/">
+                {' '}
+                III Edycja - 2025{' '}
+              </Link>
+            </div>
+          </div>
         </ul>
 
         <button
@@ -40,9 +57,9 @@ export function Header(): ReactElement {
           }}
         >
           {isMenuOpen ? (
-            <BiX aria-label='Menu' />
+            <BiX aria-label="Zamknij menu" color="white" />
           ) : (
-            <BiMenu aria-label='Menu' />
+            <BiMenu aria-label="Otwórz menu" color="white" />
           )}
         </button>
       </nav>
@@ -52,8 +69,14 @@ export function Header(): ReactElement {
           {localLinks.map((link) => (
             <MenuItem key={link.id} onClick={closeMenu} {...link} />
           ))}
-          <Link className={styles.link} href='/2023'>
-            I Edycja
+          <Link className={styles.link} href="/2023">
+            I Edycja - 2023
+          </Link>
+          <Link className={styles.link} href="/2024">
+            II Edycja - 2024
+          </Link>
+          <Link className={styles.link} href="/">
+            III Edycja - 2025
           </Link>
         </ul>
       </nav>

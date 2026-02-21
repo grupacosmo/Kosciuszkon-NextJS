@@ -1,4 +1,4 @@
-@import '@/styles/2024/variables.scss';
+@import '@/styles/2025/variables.scss';
 
 .section {
   z-index: 20;
@@ -94,5 +94,51 @@
 
   @include maxWidth($bp-tablet) {
     font-size: $header-s;
+  }
+}
+
+.dropdown {
+  position: relative;
+  height: auto;
+
+  &Content {
+    border-bottom: 4px solid $color-main;
+    background-color: $color-black;
+    width: 130%;
+    position: absolute;
+    display: none;
+    text-align: center;
+    left: -20px;
+
+    padding: $space-xs 0 $space-xs;
+
+    &Link {
+      display: block;
+      padding-top: $space-xs;
+      font-size: $font-l;
+      color: $color-white;
+      pointer-events: all;
+
+      &:hover {
+        transition: 0.3s;
+        color: $color-main;
+      }
+
+      @include maxWidth($bp-tablet) {
+        font-size: $header-s;
+      }
+    }
+  }
+
+  &:hover &Content {
+    display: block;
+  }
+
+  & > .link {
+    pointer-events: none;
+    cursor: default;
+  }
+  .dropdownContentLink {
+    padding: $space-s 0 $space-s;
   }
 }

@@ -8,7 +8,7 @@ import styles from './TopicList.module.scss';
 
 export function TopicList(): ReactElement {
   return (
-    <section id='topic-list' className={styles.section}>
+    <section id="topic-list" className={styles.section}>
       <Slider
         render={SlideContent}
         slides={sliderContent}

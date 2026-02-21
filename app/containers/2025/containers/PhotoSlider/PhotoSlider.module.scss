@@ -1,0 +1,101 @@
+@import '@/styles/2025/variables';
+
+.sliderContainer {
+  margin: $space-xl 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+
+.imageWrapper {
+  margin: auto;
+  width: 55%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-color: #1ECA94;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 10px;
+
+  @include maxWidth($bp-desktop) {
+    min-width:100%;
+  }
+
+  @include maxWidth($bp-tablet) {
+    min-width:100%;
+  }
+
+  @include maxWidth($bp-mobile) {
+    min-width:100%;
+  }
+}
+
+.sliderImage {
+  min-height: 700px;
+  width:100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: translate 300ms ease-in-out;
+}
+
+.imgSliderButton {
+  all: unset;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.4);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: white;
+  transition: background 0.2s ease-in-out;
+
+  svg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.imgSliderButton:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.imgSliderButton.left {
+  left: 1rem;
+}
+
+.imgSliderButton.right {
+  right: 1rem;
+}
+
+.sliderDots {
+  position: absolute;
+  bottom: 1rem;
+  margin: auto;
+  left: calc(47%);
+}
+
+.hexButtonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: $space-xl 0 $space-m 0;
+}
+
+.hexagonButton {
+  img {
+    width: 35rem !important;
+  }
+}
+
+
+

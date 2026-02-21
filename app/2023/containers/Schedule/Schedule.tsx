@@ -14,26 +14,20 @@ export function Schedule(): ReactElement {
     <section className={styles.schedule}>
       <div className={styles.controls}>
         <button onClick={() => setIsHackathon((state) => !state)}>
-          <BiCaretLeft
-            className={styles.icon}
-            aria-label='Zmień rodzaj harmonogramu'
-          />
+          <BiCaretLeft className={styles.icon} aria-label="Zmień rodzaj harmonogramu" />
         </button>
         <h2>{isHackathon ? 'Hackathon' : 'Warsztaty'}</h2>
         <button onClick={() => setIsHackathon((state) => !state)}>
-          <BiCaretRight
-            className={styles.icon}
-            aria-label='Zmień rodzaj harmonogramu'
-          />
+          <BiCaretRight className={styles.icon} aria-label="Zmień rodzaj harmonogramu" />
         </button>
       </div>
 
       {isHackathon && (
         <AnimatePresence>
           <ScheduleTable
-            firstTitle='Niedziela'
+            firstTitle="Niedziela"
             firstArray={scheduleData.hackathon.sunday}
-            secondTitle='Poniedziałek'
+            secondTitle="Poniedziałek"
             secondArray={scheduleData.hackathon.monday}
           />
         </AnimatePresence>
@@ -41,9 +35,9 @@ export function Schedule(): ReactElement {
       {!isHackathon && (
         <AnimatePresence>
           <ScheduleTable
-            firstTitle='Niedziela'
+            firstTitle="Niedziela"
             firstArray={scheduleData.workshop.sunday}
-            secondTitle='Poniedziałek'
+            secondTitle="Poniedziałek"
             secondArray={scheduleData.workshop.monday}
           />
         </AnimatePresence>

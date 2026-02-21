@@ -9,12 +9,7 @@ type SliderDotProps = {
   onClick: () => void;
   className?: string;
 };
-export function SliderDot({
-  index,
-  isActive,
-  className,
-  onClick,
-}: SliderDotProps): ReactElement {
+export function SliderDot({ index, isActive, className, onClick }: SliderDotProps): ReactElement {
   const buttonClassNames = clsx(styles.button, className, {
     [styles.active]: isActive,
   });

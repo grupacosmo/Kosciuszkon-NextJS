@@ -3,7 +3,7 @@
 import { useState, type ReactElement } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
-import { BiMenu } from 'react-icons/bi';
+import { BiMenu, BiX } from 'react-icons/bi';
 import { MenuItem } from './components/MenuItem';
 import { localLinks } from './data';
 import styles from './Header.module.scss';
@@ -27,18 +27,40 @@ export function Header(): ReactElement {
           {localLinks.map((link) => (
             <MenuItem key={link.id} onClick={closeMenu} {...link} />
           ))}
-          <Link className={style.link} href='/'>
-            Obecna edycja
-          </Link>
+          <div className={styles.dropdown}>
+            <Link className={styles.link} href="">
+              Historia Edycji
+            </Link>
+            <div className={styles.dropdownContent}>
+              <Link className={styles.dropdownContentLink} href="/2023">
+                {' '}
+                I Edycja - 2023
+              </Link>
+              <Link className={styles.dropdownContentLink} href="/2024">
+                {' '}
+                II Edycja - 2024{' '}
+              </Link>
+              <Link className={styles.dropdownContentLink} href="/">
+                {' '}
+                III Edycja - 2025{' '}
+              </Link>
+            </div>
+          </div>
         </ul>
 
         <button
-          className={styles.navButton}
+          className={clsx(styles.navButton, {
+            [styles.mobileNavButton]: isMenuOpen,
+          })}
           onClick={() => {
             setIsMenuOpen((state) => !state);
           }}
         >
-          <BiMenu aria-label='Menu' />
+          {isMenuOpen ? (
+            <BiX aria-label="Zamknij menu" color="white" />
+          ) : (
+            <BiMenu aria-label="Otwórz menu" color="white" />
+          )}
         </button>
       </nav>
 
@@ -47,8 +69,14 @@ export function Header(): ReactElement {
           {localLinks.map((link) => (
             <MenuItem key={link.id} onClick={closeMenu} {...link} />
           ))}
-          <Link className={style.link} href='/'>
-            Obecna edycja
+          <Link className={styles.link} href="/2023">
+            I Edycja - 2023
+          </Link>
+          <Link className={styles.link} href="/2024">
+            II Edycja - 2024
+          </Link>
+          <Link className={styles.link} href="/">
+            III Edycja - 2025
           </Link>
         </ul>
       </nav>

@@ -1,0 +1,50 @@
+@import '@/styles/2025/variables';
+
+.section {
+  width: 100%;
+  margin: $space-h 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-xl;
+}
+
+.linksContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 $space-xl;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: $space-xl;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.importantLink {
+  position: relative;
+  display: inline-block;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: $header-h;
+  }
+
+  img {
+    width: 144px;
+    height: 144px;
+  }
+
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -37,20 +37,26 @@ export function Collapsible({
   return (
     <div className={containerClassNames}>
       <button
-        type='button'
+        type="button"
         className={buttonClassNames}
         onClick={() => setIsOpen((state) => !state)}
       >
         <BiCaretRight className={clsx({ [styles.iconDown]: isOpen })} />
         <h4>{label}</h4>
       </button>
-      {isOpen && (
-        <AnimatePresence>
-          <motion.div {...MOTION_CONFIG} className={contentClassNames}>
-            {children}
-          </motion.div>
-        </AnimatePresence>
-      )}
+
+      <AnimatePresence>
+        <motion.div
+          {...MOTION_CONFIG}
+          className={clsx(styles.content, { [styles.contentClosed]: !isOpen })}
+        >
+          {children}
+        </motion.div>
+      </AnimatePresence>
+
+      <noscript>
+        <div className={clsx(styles.content)}>{children}</div>
+      </noscript>
     </div>
   );
 }

@@ -1,0 +1,43 @@
+@import '@/styles/2025/variables';
+
+.container {
+  position: relative;
+  display: inline-block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  .image {
+    width: 35rem;
+    height: auto;
+    display: block;
+  }
+}
+
+.container:hover .text {
+  color: $color-main;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color-white;
+  font-size: $header-s;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .img:hover + .text {
+  color: $color-main;
+}
+
+.disabled {
+  filter: grayscale(1);
+}

@@ -1,9 +1,4 @@
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaPhoneAlt,
-  FaEnvelope,
-} from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 export const visitUsLinks = [
   {
@@ -28,7 +23,7 @@ export const visitUsLinks = [
     id: '2023-visit-4',
     href: 'https://www.facebook.com/cosmopk.kn',
     alt: 'Koło Naukowe Cosmo PK.',
-    src: '/p2023/visit/fundacja.png',
+    src: '/p2023/visit/cosmo.png',
   },
 ];
 

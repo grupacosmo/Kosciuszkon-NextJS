@@ -19,11 +19,7 @@ type CountdownProps = {
   disabled?: boolean;
 };
 
-export function Countdown({
-  startDate,
-  endDate,
-  disabled = false,
-}: CountdownProps): ReactElement {
+export function Countdown({ startDate, endDate, disabled = false }: CountdownProps): ReactElement {
   const [startTime, setStartTime] = useState<number>(calcStartTime(startDate));
   const [endTime, setEndTime] = useState<number>(calcEndTime(endDate));
 
@@ -43,16 +39,14 @@ export function Countdown({
   const { time, header } = calcProps(startTime, endTime);
 
   return (
-    <article
-      className={clsx(styles.container, { [styles.disabled]: disabled })}
-    >
+    <article className={clsx(styles.container, { [styles.disabled]: disabled })}>
       <h3>{header}</h3>
       <div className={styles.countdown}>
         <Timer time={time} className={styles.timer} />
         <Image
           className={styles.timerBackground}
           src={hex}
-          alt='Czarny sześcian z zielonym obramowaniem.'
+          alt="Czarny sześcian z zielonym obramowaniem."
         />
       </div>
     </article>
